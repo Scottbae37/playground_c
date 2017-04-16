@@ -28,5 +28,5 @@ void funcAA(){
 
 void funcB()
 {
-	printf("funcBB() called\n");
+	printf("funcB() called\n");
 }
