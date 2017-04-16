@@ -12,10 +12,15 @@
 int main(int argc, char*args[])
 {
 	funcA();
+	funcAA();
 	return 0;
 }
 
 void funcA()
 {
 	printf("funcA() called\n");
+}
+
+void funcAA(){
+	printf("funcAA() called\n");
 }

@@ -9,5 +9,6 @@
 #define INCLUDE_GITTEST_H_
 
 void funcA();
+void funcAA();
 
 #endif /* INCLUDE_GITTEST_H_ */
