@@ -10,5 +10,6 @@
 
 void funcA();
 void funcAA();
+void funcB();
 
 #endif /* INCLUDE_GITTEST_H_ */
