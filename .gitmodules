@@ -1,0 +1,6 @@
+[submodule "tci_asn1"]
+	path = tci_asn1
+	url = https://github.com/certificationoperatingcouncil/TCI_ASN1.git
+[submodule "COC_TestSpecs"]
+	path = COC_TestSpecs
+	url = https://github.com/certificationoperatingcouncil/COC_TestSpecs.git
