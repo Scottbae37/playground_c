@@ -1,0 +1,14 @@
+<node>
+  <interface name="com.bjs.ObjectManager.Animal">
+    <property name="Mood" type="s" access="read"/>
+    <method name="Poke">
+      <arg direction="in" type="b" name="make_sad"/>
+      <arg direction="in" type="b" name="make_happy"/>
+    </method>
+    <signal name="Jumped">
+      <arg type="d" name="height"/>
+    </signal>
+  </interface>
+  <interface name="com.bjs.ObjectManager.Cat">
+  </interface>
+</node>
