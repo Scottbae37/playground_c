@@ -149,21 +149,21 @@ _g_value_equal (const GValue *a, const GValue *b)
 }
 
 /* ------------------------------------------------------------------------
- * Code for interface org.gtk.GDBus.Example.ObjectManager.Animal
+ * Code for interface com.bjs.ObjectManager.Animal
  * ------------------------------------------------------------------------
  */
 
 /**
- * SECTION:BjsOrgGtkGDBusExampleObjectManagerAnimal
- * @title: BjsOrgGtkGDBusExampleObjectManagerAnimal
- * @short_description: Generated C code for the org.gtk.GDBus.Example.ObjectManager.Animal D-Bus interface
+ * SECTION:BjsComBjsObjectManagerAnimal
+ * @title: BjsComBjsObjectManagerAnimal
+ * @short_description: Generated C code for the com.bjs.ObjectManager.Animal D-Bus interface
  *
- * This section contains code for working with the <link linkend="gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Animal.top_of_page">org.gtk.GDBus.Example.ObjectManager.Animal</link> D-Bus interface in C.
+ * This section contains code for working with the <link linkend="gdbus-interface-com-bjs-ObjectManager-Animal.top_of_page">com.bjs.ObjectManager.Animal</link> D-Bus interface in C.
  */
 
-/* ---- Introspection data for org.gtk.GDBus.Example.ObjectManager.Animal ---- */
+/* ---- Introspection data for com.bjs.ObjectManager.Animal ---- */
 
-static const _ExtendedGDBusArgInfo _bjs_org_gtk_gdbus_example_object_manager_animal_method_info_poke_IN_ARG_make_sad =
+static const _ExtendedGDBusArgInfo _bjs_com_bjs_object_manager_animal_method_info_poke_IN_ARG_make_sad =
 {
   {
     -1,
@@ -174,7 +174,7 @@ static const _ExtendedGDBusArgInfo _bjs_org_gtk_gdbus_example_object_manager_ani
   FALSE
 };
 
-static const _ExtendedGDBusArgInfo _bjs_org_gtk_gdbus_example_object_manager_animal_method_info_poke_IN_ARG_make_happy =
+static const _ExtendedGDBusArgInfo _bjs_com_bjs_object_manager_animal_method_info_poke_IN_ARG_make_happy =
 {
   {
     -1,
@@ -185,19 +185,19 @@ static const _ExtendedGDBusArgInfo _bjs_org_gtk_gdbus_example_object_manager_ani
   FALSE
 };
 
-static const _ExtendedGDBusArgInfo * const _bjs_org_gtk_gdbus_example_object_manager_animal_method_info_poke_IN_ARG_pointers[] =
+static const _ExtendedGDBusArgInfo * const _bjs_com_bjs_object_manager_animal_method_info_poke_IN_ARG_pointers[] =
 {
-  &_bjs_org_gtk_gdbus_example_object_manager_animal_method_info_poke_IN_ARG_make_sad,
-  &_bjs_org_gtk_gdbus_example_object_manager_animal_method_info_poke_IN_ARG_make_happy,
+  &_bjs_com_bjs_object_manager_animal_method_info_poke_IN_ARG_make_sad,
+  &_bjs_com_bjs_object_manager_animal_method_info_poke_IN_ARG_make_happy,
   NULL
 };
 
-static const _ExtendedGDBusMethodInfo _bjs_org_gtk_gdbus_example_object_manager_animal_method_info_poke =
+static const _ExtendedGDBusMethodInfo _bjs_com_bjs_object_manager_animal_method_info_poke =
 {
   {
     -1,
     (gchar *) "Poke",
-    (GDBusArgInfo **) &_bjs_org_gtk_gdbus_example_object_manager_animal_method_info_poke_IN_ARG_pointers,
+    (GDBusArgInfo **) &_bjs_com_bjs_object_manager_animal_method_info_poke_IN_ARG_pointers,
     NULL,
     NULL
   },
@@ -205,13 +205,13 @@ static const _ExtendedGDBusMethodInfo _bjs_org_gtk_gdbus_example_object_manager_
   FALSE
 };
 
-static const _ExtendedGDBusMethodInfo * const _bjs_org_gtk_gdbus_example_object_manager_animal_method_info_pointers[] =
+static const _ExtendedGDBusMethodInfo * const _bjs_com_bjs_object_manager_animal_method_info_pointers[] =
 {
-  &_bjs_org_gtk_gdbus_example_object_manager_animal_method_info_poke,
+  &_bjs_com_bjs_object_manager_animal_method_info_poke,
   NULL
 };
 
-static const _ExtendedGDBusArgInfo _bjs_org_gtk_gdbus_example_object_manager_animal_signal_info_jumped_ARG_height =
+static const _ExtendedGDBusArgInfo _bjs_com_bjs_object_manager_animal_signal_info_jumped_ARG_height =
 {
   {
     -1,
@@ -222,30 +222,30 @@ static const _ExtendedGDBusArgInfo _bjs_org_gtk_gdbus_example_object_manager_ani
   FALSE
 };
 
-static const _ExtendedGDBusArgInfo * const _bjs_org_gtk_gdbus_example_object_manager_animal_signal_info_jumped_ARG_pointers[] =
+static const _ExtendedGDBusArgInfo * const _bjs_com_bjs_object_manager_animal_signal_info_jumped_ARG_pointers[] =
 {
-  &_bjs_org_gtk_gdbus_example_object_manager_animal_signal_info_jumped_ARG_height,
+  &_bjs_com_bjs_object_manager_animal_signal_info_jumped_ARG_height,
   NULL
 };
 
-static const _ExtendedGDBusSignalInfo _bjs_org_gtk_gdbus_example_object_manager_animal_signal_info_jumped =
+static const _ExtendedGDBusSignalInfo _bjs_com_bjs_object_manager_animal_signal_info_jumped =
 {
   {
     -1,
     (gchar *) "Jumped",
-    (GDBusArgInfo **) &_bjs_org_gtk_gdbus_example_object_manager_animal_signal_info_jumped_ARG_pointers,
+    (GDBusArgInfo **) &_bjs_com_bjs_object_manager_animal_signal_info_jumped_ARG_pointers,
     NULL
   },
   "jumped"
 };
 
-static const _ExtendedGDBusSignalInfo * const _bjs_org_gtk_gdbus_example_object_manager_animal_signal_info_pointers[] =
+static const _ExtendedGDBusSignalInfo * const _bjs_com_bjs_object_manager_animal_signal_info_pointers[] =
 {
-  &_bjs_org_gtk_gdbus_example_object_manager_animal_signal_info_jumped,
+  &_bjs_com_bjs_object_manager_animal_signal_info_jumped,
   NULL
 };
 
-static const _ExtendedGDBusPropertyInfo _bjs_org_gtk_gdbus_example_object_manager_animal_property_info_mood =
+static const _ExtendedGDBusPropertyInfo _bjs_com_bjs_object_manager_animal_property_info_mood =
 {
   {
     -1,
@@ -258,51 +258,51 @@ static const _ExtendedGDBusPropertyInfo _bjs_org_gtk_gdbus_example_object_manage
   FALSE
 };
 
-static const _ExtendedGDBusPropertyInfo * const _bjs_org_gtk_gdbus_example_object_manager_animal_property_info_pointers[] =
+static const _ExtendedGDBusPropertyInfo * const _bjs_com_bjs_object_manager_animal_property_info_pointers[] =
 {
-  &_bjs_org_gtk_gdbus_example_object_manager_animal_property_info_mood,
+  &_bjs_com_bjs_object_manager_animal_property_info_mood,
   NULL
 };
 
-static const _ExtendedGDBusInterfaceInfo _bjs_org_gtk_gdbus_example_object_manager_animal_interface_info =
+static const _ExtendedGDBusInterfaceInfo _bjs_com_bjs_object_manager_animal_interface_info =
 {
   {
     -1,
-    (gchar *) "org.gtk.GDBus.Example.ObjectManager.Animal",
-    (GDBusMethodInfo **) &_bjs_org_gtk_gdbus_example_object_manager_animal_method_info_pointers,
-    (GDBusSignalInfo **) &_bjs_org_gtk_gdbus_example_object_manager_animal_signal_info_pointers,
-    (GDBusPropertyInfo **) &_bjs_org_gtk_gdbus_example_object_manager_animal_property_info_pointers,
+    (gchar *) "com.bjs.ObjectManager.Animal",
+    (GDBusMethodInfo **) &_bjs_com_bjs_object_manager_animal_method_info_pointers,
+    (GDBusSignalInfo **) &_bjs_com_bjs_object_manager_animal_signal_info_pointers,
+    (GDBusPropertyInfo **) &_bjs_com_bjs_object_manager_animal_property_info_pointers,
     NULL
   },
-  "org-gtk-gdbus-example-object-manager-animal",
+  "com-bjs-object-manager-animal",
 };
 
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_interface_info:
+ * bjs_com_bjs_object_manager_animal_interface_info:
  *
- * Gets a machine-readable description of the <link linkend="gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Animal.top_of_page">org.gtk.GDBus.Example.ObjectManager.Animal</link> D-Bus interface.
+ * Gets a machine-readable description of the <link linkend="gdbus-interface-com-bjs-ObjectManager-Animal.top_of_page">com.bjs.ObjectManager.Animal</link> D-Bus interface.
  *
  * Returns: (transfer none): A #GDBusInterfaceInfo. Do not free.
  */
 GDBusInterfaceInfo *
-bjs_org_gtk_gdbus_example_object_manager_animal_interface_info (void)
+bjs_com_bjs_object_manager_animal_interface_info (void)
 {
-  return (GDBusInterfaceInfo *) &_bjs_org_gtk_gdbus_example_object_manager_animal_interface_info.parent_struct;
+  return (GDBusInterfaceInfo *) &_bjs_com_bjs_object_manager_animal_interface_info.parent_struct;
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_override_properties:
+ * bjs_com_bjs_object_manager_animal_override_properties:
  * @klass: The class structure for a #GObject<!-- -->-derived class.
  * @property_id_begin: The property id to assign to the first overridden property.
  *
- * Overrides all #GObject properties in the #BjsOrgGtkGDBusExampleObjectManagerAnimal interface for a concrete class.
+ * Overrides all #GObject properties in the #BjsComBjsObjectManagerAnimal interface for a concrete class.
  * The properties are overridden in the order they are defined.
  *
  * Returns: The last property id.
  */
 guint
-bjs_org_gtk_gdbus_example_object_manager_animal_override_properties (GObjectClass *klass, guint property_id_begin)
+bjs_com_bjs_object_manager_animal_override_properties (GObjectClass *klass, guint property_id_begin)
 {
   g_object_class_override_property (klass, property_id_begin++, "mood");
   return property_id_begin - 1;
@@ -311,45 +311,45 @@ bjs_org_gtk_gdbus_example_object_manager_animal_override_properties (GObjectClas
 
 
 /**
- * BjsOrgGtkGDBusExampleObjectManagerAnimal:
+ * BjsComBjsObjectManagerAnimal:
  *
- * Abstract interface type for the D-Bus interface <link linkend="gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Animal.top_of_page">org.gtk.GDBus.Example.ObjectManager.Animal</link>.
+ * Abstract interface type for the D-Bus interface <link linkend="gdbus-interface-com-bjs-ObjectManager-Animal.top_of_page">com.bjs.ObjectManager.Animal</link>.
  */
 
 /**
- * BjsOrgGtkGDBusExampleObjectManagerAnimalIface:
+ * BjsComBjsObjectManagerAnimalIface:
  * @parent_iface: The parent interface.
- * @handle_poke: Handler for the #BjsOrgGtkGDBusExampleObjectManagerAnimal::handle-poke signal.
- * @get_mood: Getter for the #BjsOrgGtkGDBusExampleObjectManagerAnimal:mood property.
- * @jumped: Handler for the #BjsOrgGtkGDBusExampleObjectManagerAnimal::jumped signal.
+ * @handle_poke: Handler for the #BjsComBjsObjectManagerAnimal::handle-poke signal.
+ * @get_mood: Getter for the #BjsComBjsObjectManagerAnimal:mood property.
+ * @jumped: Handler for the #BjsComBjsObjectManagerAnimal::jumped signal.
  *
- * Virtual table for the D-Bus interface <link linkend="gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Animal.top_of_page">org.gtk.GDBus.Example.ObjectManager.Animal</link>.
+ * Virtual table for the D-Bus interface <link linkend="gdbus-interface-com-bjs-ObjectManager-Animal.top_of_page">com.bjs.ObjectManager.Animal</link>.
  */
 
-typedef BjsOrgGtkGDBusExampleObjectManagerAnimalIface BjsOrgGtkGDBusExampleObjectManagerAnimalInterface;
-G_DEFINE_INTERFACE (BjsOrgGtkGDBusExampleObjectManagerAnimal, bjs_org_gtk_gdbus_example_object_manager_animal, G_TYPE_OBJECT);
+typedef BjsComBjsObjectManagerAnimalIface BjsComBjsObjectManagerAnimalInterface;
+G_DEFINE_INTERFACE (BjsComBjsObjectManagerAnimal, bjs_com_bjs_object_manager_animal, G_TYPE_OBJECT);
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_default_init (BjsOrgGtkGDBusExampleObjectManagerAnimalIface *iface)
+bjs_com_bjs_object_manager_animal_default_init (BjsComBjsObjectManagerAnimalIface *iface)
 {
   /* GObject signals for incoming D-Bus method calls: */
   /**
-   * BjsOrgGtkGDBusExampleObjectManagerAnimal::handle-poke:
-   * @object: A #BjsOrgGtkGDBusExampleObjectManagerAnimal.
+   * BjsComBjsObjectManagerAnimal::handle-poke:
+   * @object: A #BjsComBjsObjectManagerAnimal.
    * @invocation: A #GDBusMethodInvocation.
    * @arg_make_sad: Argument passed by remote caller.
    * @arg_make_happy: Argument passed by remote caller.
    *
-   * Signal emitted when a remote caller is invoking the <link linkend="gdbus-method-org-gtk-GDBus-Example-ObjectManager-Animal.Poke">Poke()</link> D-Bus method.
+   * Signal emitted when a remote caller is invoking the <link linkend="gdbus-method-com-bjs-ObjectManager-Animal.Poke">Poke()</link> D-Bus method.
    *
-   * If a signal handler returns %TRUE, it means the signal handler will handle the invocation (e.g. take a reference to @invocation and eventually call bjs_org_gtk_gdbus_example_object_manager_animal_complete_poke() or e.g. g_dbus_method_invocation_return_error() on it) and no order signal handlers will run. If no signal handler handles the invocation, the %G_DBUS_ERROR_UNKNOWN_METHOD error is returned.
+   * If a signal handler returns %TRUE, it means the signal handler will handle the invocation (e.g. take a reference to @invocation and eventually call bjs_com_bjs_object_manager_animal_complete_poke() or e.g. g_dbus_method_invocation_return_error() on it) and no order signal handlers will run. If no signal handler handles the invocation, the %G_DBUS_ERROR_UNKNOWN_METHOD error is returned.
    *
    * Returns: %TRUE if the invocation was handled, %FALSE to let other signal handlers run.
    */
   g_signal_new ("handle-poke",
     G_TYPE_FROM_INTERFACE (iface),
     G_SIGNAL_RUN_LAST,
-    G_STRUCT_OFFSET (BjsOrgGtkGDBusExampleObjectManagerAnimalIface, handle_poke),
+    G_STRUCT_OFFSET (BjsComBjsObjectManagerAnimalIface, handle_poke),
     g_signal_accumulator_true_handled,
     NULL,
     g_cclosure_marshal_generic,
@@ -359,18 +359,18 @@ bjs_org_gtk_gdbus_example_object_manager_animal_default_init (BjsOrgGtkGDBusExam
 
   /* GObject signals for received D-Bus signals: */
   /**
-   * BjsOrgGtkGDBusExampleObjectManagerAnimal::jumped:
-   * @object: A #BjsOrgGtkGDBusExampleObjectManagerAnimal.
+   * BjsComBjsObjectManagerAnimal::jumped:
+   * @object: A #BjsComBjsObjectManagerAnimal.
    * @arg_height: Argument.
    *
-   * On the client-side, this signal is emitted whenever the D-Bus signal <link linkend="gdbus-signal-org-gtk-GDBus-Example-ObjectManager-Animal.Jumped">"Jumped"</link> is received.
+   * On the client-side, this signal is emitted whenever the D-Bus signal <link linkend="gdbus-signal-com-bjs-ObjectManager-Animal.Jumped">"Jumped"</link> is received.
    *
    * On the service-side, this signal can be used with e.g. g_signal_emit_by_name() to make the object emit the D-Bus signal.
    */
   g_signal_new ("jumped",
     G_TYPE_FROM_INTERFACE (iface),
     G_SIGNAL_RUN_LAST,
-    G_STRUCT_OFFSET (BjsOrgGtkGDBusExampleObjectManagerAnimalIface, jumped),
+    G_STRUCT_OFFSET (BjsComBjsObjectManagerAnimalIface, jumped),
     NULL,
     NULL,
     g_cclosure_marshal_generic,
@@ -379,9 +379,9 @@ bjs_org_gtk_gdbus_example_object_manager_animal_default_init (BjsOrgGtkGDBusExam
 
   /* GObject properties for D-Bus properties: */
   /**
-   * BjsOrgGtkGDBusExampleObjectManagerAnimal:mood:
+   * BjsComBjsObjectManagerAnimal:mood:
    *
-   * Represents the D-Bus property <link linkend="gdbus-property-org-gtk-GDBus-Example-ObjectManager-Animal.Mood">"Mood"</link>.
+   * Represents the D-Bus property <link linkend="gdbus-property-com-bjs-ObjectManager-Animal.Mood">"Mood"</link>.
    *
    * Since the D-Bus property for this #GObject property is readable but not writable, it is meaningful to read from it on both the client- and service-side. It is only meaningful, however, to write to it on the service-side.
    */
@@ -390,35 +390,35 @@ bjs_org_gtk_gdbus_example_object_manager_animal_default_init (BjsOrgGtkGDBusExam
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_get_mood: (skip)
- * @object: A #BjsOrgGtkGDBusExampleObjectManagerAnimal.
+ * bjs_com_bjs_object_manager_animal_get_mood: (skip)
+ * @object: A #BjsComBjsObjectManagerAnimal.
  *
- * Gets the value of the <link linkend="gdbus-property-org-gtk-GDBus-Example-ObjectManager-Animal.Mood">"Mood"</link> D-Bus property.
+ * Gets the value of the <link linkend="gdbus-property-com-bjs-ObjectManager-Animal.Mood">"Mood"</link> D-Bus property.
  *
  * Since this D-Bus property is readable, it is meaningful to use this function on both the client- and service-side.
  *
- * <warning>The returned value is only valid until the property changes so on the client-side it is only safe to use this function on the thread where @object was constructed. Use bjs_org_gtk_gdbus_example_object_manager_animal_dup_mood() if on another thread.</warning>
+ * <warning>The returned value is only valid until the property changes so on the client-side it is only safe to use this function on the thread where @object was constructed. Use bjs_com_bjs_object_manager_animal_dup_mood() if on another thread.</warning>
  *
  * Returns: (transfer none): The property value or %NULL if the property is not set. Do not free the returned value, it belongs to @object.
  */
 const gchar *
-bjs_org_gtk_gdbus_example_object_manager_animal_get_mood (BjsOrgGtkGDBusExampleObjectManagerAnimal *object)
+bjs_com_bjs_object_manager_animal_get_mood (BjsComBjsObjectManagerAnimal *object)
 {
-  return BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_GET_IFACE (object)->get_mood (object);
+  return BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_GET_IFACE (object)->get_mood (object);
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_dup_mood: (skip)
- * @object: A #BjsOrgGtkGDBusExampleObjectManagerAnimal.
+ * bjs_com_bjs_object_manager_animal_dup_mood: (skip)
+ * @object: A #BjsComBjsObjectManagerAnimal.
  *
- * Gets a copy of the <link linkend="gdbus-property-org-gtk-GDBus-Example-ObjectManager-Animal.Mood">"Mood"</link> D-Bus property.
+ * Gets a copy of the <link linkend="gdbus-property-com-bjs-ObjectManager-Animal.Mood">"Mood"</link> D-Bus property.
  *
  * Since this D-Bus property is readable, it is meaningful to use this function on both the client- and service-side.
  *
  * Returns: (transfer full): The property value or %NULL if the property is not set. The returned value should be freed with g_free().
  */
 gchar *
-bjs_org_gtk_gdbus_example_object_manager_animal_dup_mood (BjsOrgGtkGDBusExampleObjectManagerAnimal *object)
+bjs_com_bjs_object_manager_animal_dup_mood (BjsComBjsObjectManagerAnimal *object)
 {
   gchar *value;
   g_object_get (G_OBJECT (object), "mood", &value, NULL);
@@ -426,53 +426,53 @@ bjs_org_gtk_gdbus_example_object_manager_animal_dup_mood (BjsOrgGtkGDBusExampleO
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_set_mood: (skip)
- * @object: A #BjsOrgGtkGDBusExampleObjectManagerAnimal.
+ * bjs_com_bjs_object_manager_animal_set_mood: (skip)
+ * @object: A #BjsComBjsObjectManagerAnimal.
  * @value: The value to set.
  *
- * Sets the <link linkend="gdbus-property-org-gtk-GDBus-Example-ObjectManager-Animal.Mood">"Mood"</link> D-Bus property to @value.
+ * Sets the <link linkend="gdbus-property-com-bjs-ObjectManager-Animal.Mood">"Mood"</link> D-Bus property to @value.
  *
  * Since this D-Bus property is not writable, it is only meaningful to use this function on the service-side.
  */
 void
-bjs_org_gtk_gdbus_example_object_manager_animal_set_mood (BjsOrgGtkGDBusExampleObjectManagerAnimal *object, const gchar *value)
+bjs_com_bjs_object_manager_animal_set_mood (BjsComBjsObjectManagerAnimal *object, const gchar *value)
 {
   g_object_set (G_OBJECT (object), "mood", value, NULL);
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_emit_jumped:
- * @object: A #BjsOrgGtkGDBusExampleObjectManagerAnimal.
+ * bjs_com_bjs_object_manager_animal_emit_jumped:
+ * @object: A #BjsComBjsObjectManagerAnimal.
  * @arg_height: Argument to pass with the signal.
  *
- * Emits the <link linkend="gdbus-signal-org-gtk-GDBus-Example-ObjectManager-Animal.Jumped">"Jumped"</link> D-Bus signal.
+ * Emits the <link linkend="gdbus-signal-com-bjs-ObjectManager-Animal.Jumped">"Jumped"</link> D-Bus signal.
  */
 void
-bjs_org_gtk_gdbus_example_object_manager_animal_emit_jumped (
-    BjsOrgGtkGDBusExampleObjectManagerAnimal *object,
+bjs_com_bjs_object_manager_animal_emit_jumped (
+    BjsComBjsObjectManagerAnimal *object,
     gdouble arg_height)
 {
   g_signal_emit_by_name (object, "jumped", arg_height);
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_call_poke:
- * @proxy: A #BjsOrgGtkGDBusExampleObjectManagerAnimalProxy.
+ * bjs_com_bjs_object_manager_animal_call_poke:
+ * @proxy: A #BjsComBjsObjectManagerAnimalProxy.
  * @arg_make_sad: Argument to pass with the method invocation.
  * @arg_make_happy: Argument to pass with the method invocation.
  * @cancellable: (allow-none): A #GCancellable or %NULL.
  * @callback: A #GAsyncReadyCallback to call when the request is satisfied or %NULL.
  * @user_data: User data to pass to @callback.
  *
- * Asynchronously invokes the <link linkend="gdbus-method-org-gtk-GDBus-Example-ObjectManager-Animal.Poke">Poke()</link> D-Bus method on @proxy.
+ * Asynchronously invokes the <link linkend="gdbus-method-com-bjs-ObjectManager-Animal.Poke">Poke()</link> D-Bus method on @proxy.
  * When the operation is finished, @callback will be invoked in the <link linkend="g-main-context-push-thread-default">thread-default main loop</link> of the thread you are calling this method from.
- * You can then call bjs_org_gtk_gdbus_example_object_manager_animal_call_poke_finish() to get the result of the operation.
+ * You can then call bjs_com_bjs_object_manager_animal_call_poke_finish() to get the result of the operation.
  *
- * See bjs_org_gtk_gdbus_example_object_manager_animal_call_poke_sync() for the synchronous, blocking version of this method.
+ * See bjs_com_bjs_object_manager_animal_call_poke_sync() for the synchronous, blocking version of this method.
  */
 void
-bjs_org_gtk_gdbus_example_object_manager_animal_call_poke (
-    BjsOrgGtkGDBusExampleObjectManagerAnimal *proxy,
+bjs_com_bjs_object_manager_animal_call_poke (
+    BjsComBjsObjectManagerAnimal *proxy,
     gboolean arg_make_sad,
     gboolean arg_make_happy,
     GCancellable *cancellable,
@@ -492,18 +492,18 @@ bjs_org_gtk_gdbus_example_object_manager_animal_call_poke (
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_call_poke_finish:
- * @proxy: A #BjsOrgGtkGDBusExampleObjectManagerAnimalProxy.
- * @res: The #GAsyncResult obtained from the #GAsyncReadyCallback passed to bjs_org_gtk_gdbus_example_object_manager_animal_call_poke().
+ * bjs_com_bjs_object_manager_animal_call_poke_finish:
+ * @proxy: A #BjsComBjsObjectManagerAnimalProxy.
+ * @res: The #GAsyncResult obtained from the #GAsyncReadyCallback passed to bjs_com_bjs_object_manager_animal_call_poke().
  * @error: Return location for error or %NULL.
  *
- * Finishes an operation started with bjs_org_gtk_gdbus_example_object_manager_animal_call_poke().
+ * Finishes an operation started with bjs_com_bjs_object_manager_animal_call_poke().
  *
  * Returns: (skip): %TRUE if the call succeded, %FALSE if @error is set.
  */
 gboolean
-bjs_org_gtk_gdbus_example_object_manager_animal_call_poke_finish (
-    BjsOrgGtkGDBusExampleObjectManagerAnimal *proxy,
+bjs_com_bjs_object_manager_animal_call_poke_finish (
+    BjsComBjsObjectManagerAnimal *proxy,
     GAsyncResult *res,
     GError **error)
 {
@@ -519,22 +519,22 @@ _out:
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_call_poke_sync:
- * @proxy: A #BjsOrgGtkGDBusExampleObjectManagerAnimalProxy.
+ * bjs_com_bjs_object_manager_animal_call_poke_sync:
+ * @proxy: A #BjsComBjsObjectManagerAnimalProxy.
  * @arg_make_sad: Argument to pass with the method invocation.
  * @arg_make_happy: Argument to pass with the method invocation.
  * @cancellable: (allow-none): A #GCancellable or %NULL.
  * @error: Return location for error or %NULL.
  *
- * Synchronously invokes the <link linkend="gdbus-method-org-gtk-GDBus-Example-ObjectManager-Animal.Poke">Poke()</link> D-Bus method on @proxy. The calling thread is blocked until a reply is received.
+ * Synchronously invokes the <link linkend="gdbus-method-com-bjs-ObjectManager-Animal.Poke">Poke()</link> D-Bus method on @proxy. The calling thread is blocked until a reply is received.
  *
- * See bjs_org_gtk_gdbus_example_object_manager_animal_call_poke() for the asynchronous version of this method.
+ * See bjs_com_bjs_object_manager_animal_call_poke() for the asynchronous version of this method.
  *
  * Returns: (skip): %TRUE if the call succeded, %FALSE if @error is set.
  */
 gboolean
-bjs_org_gtk_gdbus_example_object_manager_animal_call_poke_sync (
-    BjsOrgGtkGDBusExampleObjectManagerAnimal *proxy,
+bjs_com_bjs_object_manager_animal_call_poke_sync (
+    BjsComBjsObjectManagerAnimal *proxy,
     gboolean arg_make_sad,
     gboolean arg_make_happy,
     GCancellable *cancellable,
@@ -560,17 +560,17 @@ _out:
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_complete_poke:
- * @object: A #BjsOrgGtkGDBusExampleObjectManagerAnimal.
+ * bjs_com_bjs_object_manager_animal_complete_poke:
+ * @object: A #BjsComBjsObjectManagerAnimal.
  * @invocation: (transfer full): A #GDBusMethodInvocation.
  *
- * Helper function used in service implementations to finish handling invocations of the <link linkend="gdbus-method-org-gtk-GDBus-Example-ObjectManager-Animal.Poke">Poke()</link> D-Bus method. If you instead want to finish handling an invocation by returning an error, use g_dbus_method_invocation_return_error() or similar.
+ * Helper function used in service implementations to finish handling invocations of the <link linkend="gdbus-method-com-bjs-ObjectManager-Animal.Poke">Poke()</link> D-Bus method. If you instead want to finish handling an invocation by returning an error, use g_dbus_method_invocation_return_error() or similar.
  *
  * This method will free @invocation, you cannot use it afterwards.
  */
 void
-bjs_org_gtk_gdbus_example_object_manager_animal_complete_poke (
-    BjsOrgGtkGDBusExampleObjectManagerAnimal *object,
+bjs_com_bjs_object_manager_animal_complete_poke (
+    BjsComBjsObjectManagerAnimal *object,
     GDBusMethodInvocation *invocation)
 {
   g_dbus_method_invocation_return_value (invocation,
@@ -580,45 +580,45 @@ bjs_org_gtk_gdbus_example_object_manager_animal_complete_poke (
 /* ------------------------------------------------------------------------ */
 
 /**
- * BjsOrgGtkGDBusExampleObjectManagerAnimalProxy:
+ * BjsComBjsObjectManagerAnimalProxy:
  *
- * The #BjsOrgGtkGDBusExampleObjectManagerAnimalProxy structure contains only private data and should only be accessed using the provided API.
+ * The #BjsComBjsObjectManagerAnimalProxy structure contains only private data and should only be accessed using the provided API.
  */
 
 /**
- * BjsOrgGtkGDBusExampleObjectManagerAnimalProxyClass:
+ * BjsComBjsObjectManagerAnimalProxyClass:
  * @parent_class: The parent class.
  *
- * Class structure for #BjsOrgGtkGDBusExampleObjectManagerAnimalProxy.
+ * Class structure for #BjsComBjsObjectManagerAnimalProxy.
  */
 
-struct _BjsOrgGtkGDBusExampleObjectManagerAnimalProxyPrivate
+struct _BjsComBjsObjectManagerAnimalProxyPrivate
 {
   GData *qdata;
 };
 
-static void bjs_org_gtk_gdbus_example_object_manager_animal_proxy_iface_init (BjsOrgGtkGDBusExampleObjectManagerAnimalIface *iface);
+static void bjs_com_bjs_object_manager_animal_proxy_iface_init (BjsComBjsObjectManagerAnimalIface *iface);
 
 #if GLIB_VERSION_MAX_ALLOWED >= GLIB_VERSION_2_38
-G_DEFINE_TYPE_WITH_CODE (BjsOrgGtkGDBusExampleObjectManagerAnimalProxy, bjs_org_gtk_gdbus_example_object_manager_animal_proxy, G_TYPE_DBUS_PROXY,
-                         G_ADD_PRIVATE (BjsOrgGtkGDBusExampleObjectManagerAnimalProxy)
-                         G_IMPLEMENT_INTERFACE (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL, bjs_org_gtk_gdbus_example_object_manager_animal_proxy_iface_init));
+G_DEFINE_TYPE_WITH_CODE (BjsComBjsObjectManagerAnimalProxy, bjs_com_bjs_object_manager_animal_proxy, G_TYPE_DBUS_PROXY,
+                         G_ADD_PRIVATE (BjsComBjsObjectManagerAnimalProxy)
+                         G_IMPLEMENT_INTERFACE (BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL, bjs_com_bjs_object_manager_animal_proxy_iface_init));
 
 #else
-G_DEFINE_TYPE_WITH_CODE (BjsOrgGtkGDBusExampleObjectManagerAnimalProxy, bjs_org_gtk_gdbus_example_object_manager_animal_proxy, G_TYPE_DBUS_PROXY,
-                         G_IMPLEMENT_INTERFACE (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL, bjs_org_gtk_gdbus_example_object_manager_animal_proxy_iface_init));
+G_DEFINE_TYPE_WITH_CODE (BjsComBjsObjectManagerAnimalProxy, bjs_com_bjs_object_manager_animal_proxy, G_TYPE_DBUS_PROXY,
+                         G_IMPLEMENT_INTERFACE (BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL, bjs_com_bjs_object_manager_animal_proxy_iface_init));
 
 #endif
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_finalize (GObject *object)
+bjs_com_bjs_object_manager_animal_proxy_finalize (GObject *object)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalProxy *proxy = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_PROXY (object);
+  BjsComBjsObjectManagerAnimalProxy *proxy = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_PROXY (object);
   g_datalist_clear (&proxy->priv->qdata);
-  G_OBJECT_CLASS (bjs_org_gtk_gdbus_example_object_manager_animal_proxy_parent_class)->finalize (object);
+  G_OBJECT_CLASS (bjs_com_bjs_object_manager_animal_proxy_parent_class)->finalize (object);
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_get_property (GObject      *object,
+bjs_com_bjs_object_manager_animal_proxy_get_property (GObject      *object,
   guint         prop_id,
   GValue       *value,
   GParamSpec   *pspec G_GNUC_UNUSED)
@@ -626,7 +626,7 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_get_property (GObject     
   const _ExtendedGDBusPropertyInfo *info;
   GVariant *variant;
   g_assert (prop_id != 0 && prop_id - 1 < 1);
-  info = _bjs_org_gtk_gdbus_example_object_manager_animal_property_info_pointers[prop_id - 1];
+  info = _bjs_com_bjs_object_manager_animal_property_info_pointers[prop_id - 1];
   variant = g_dbus_proxy_get_cached_property (G_DBUS_PROXY (object), info->parent_struct.name);
   if (info->use_gvariant)
     {
@@ -642,7 +642,7 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_get_property (GObject     
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_set_property_cb (GDBusProxy *proxy,
+bjs_com_bjs_object_manager_animal_proxy_set_property_cb (GDBusProxy *proxy,
   GAsyncResult *res,
   gpointer      user_data)
 {
@@ -653,7 +653,7 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_set_property_cb (GDBusProx
   _ret = g_dbus_proxy_call_finish (proxy, res, &error);
   if (!_ret)
     {
-      g_warning ("Error setting property '%s' on interface org.gtk.GDBus.Example.ObjectManager.Animal: %s (%s, %d)",
+      g_warning ("Error setting property '%s' on interface com.bjs.ObjectManager.Animal: %s (%s, %d)",
                  info->parent_struct.name, 
                  error->message, g_quark_to_string (error->domain), error->code);
       g_error_free (error);
@@ -665,7 +665,7 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_set_property_cb (GDBusProx
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_set_property (GObject      *object,
+bjs_com_bjs_object_manager_animal_proxy_set_property (GObject      *object,
   guint         prop_id,
   const GValue *value,
   GParamSpec   *pspec G_GNUC_UNUSED)
@@ -673,19 +673,19 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_set_property (GObject     
   const _ExtendedGDBusPropertyInfo *info;
   GVariant *variant;
   g_assert (prop_id != 0 && prop_id - 1 < 1);
-  info = _bjs_org_gtk_gdbus_example_object_manager_animal_property_info_pointers[prop_id - 1];
+  info = _bjs_com_bjs_object_manager_animal_property_info_pointers[prop_id - 1];
   variant = g_dbus_gvalue_to_gvariant (value, G_VARIANT_TYPE (info->parent_struct.signature));
   g_dbus_proxy_call (G_DBUS_PROXY (object),
     "org.freedesktop.DBus.Properties.Set",
-    g_variant_new ("(ssv)", "org.gtk.GDBus.Example.ObjectManager.Animal", info->parent_struct.name, variant),
+    g_variant_new ("(ssv)", "com.bjs.ObjectManager.Animal", info->parent_struct.name, variant),
     G_DBUS_CALL_FLAGS_NONE,
     -1,
-    NULL, (GAsyncReadyCallback) bjs_org_gtk_gdbus_example_object_manager_animal_proxy_set_property_cb, (GDBusPropertyInfo *) &info->parent_struct);
+    NULL, (GAsyncReadyCallback) bjs_com_bjs_object_manager_animal_proxy_set_property_cb, (GDBusPropertyInfo *) &info->parent_struct);
   g_variant_unref (variant);
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_g_signal (GDBusProxy *proxy,
+bjs_com_bjs_object_manager_animal_proxy_g_signal (GDBusProxy *proxy,
   const gchar *sender_name G_GNUC_UNUSED,
   const gchar *signal_name,
   GVariant *parameters)
@@ -697,12 +697,12 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_g_signal (GDBusProxy *prox
   guint num_params;
   guint n;
   guint signal_id;
-  info = (_ExtendedGDBusSignalInfo *) g_dbus_interface_info_lookup_signal ((GDBusInterfaceInfo *) &_bjs_org_gtk_gdbus_example_object_manager_animal_interface_info.parent_struct, signal_name);
+  info = (_ExtendedGDBusSignalInfo *) g_dbus_interface_info_lookup_signal ((GDBusInterfaceInfo *) &_bjs_com_bjs_object_manager_animal_interface_info.parent_struct, signal_name);
   if (info == NULL)
     return;
   num_params = g_variant_n_children (parameters);
   paramv = g_new0 (GValue, num_params + 1);
-  g_value_init (&paramv[0], BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL);
+  g_value_init (&paramv[0], BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL);
   g_value_set_object (&paramv[0], proxy);
   g_variant_iter_init (&iter, parameters);
   n = 1;
@@ -719,7 +719,7 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_g_signal (GDBusProxy *prox
         g_dbus_gvariant_to_gvalue (child, &paramv[n++]);
       g_variant_unref (child);
     }
-  signal_id = g_signal_lookup (info->signal_name, BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL);
+  signal_id = g_signal_lookup (info->signal_name, BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL);
   g_signal_emitv (paramv, signal_id, 0, NULL);
   for (n = 0; n < num_params + 1; n++)
     g_value_unset (&paramv[n]);
@@ -727,11 +727,11 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_g_signal (GDBusProxy *prox
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_g_properties_changed (GDBusProxy *_proxy,
+bjs_com_bjs_object_manager_animal_proxy_g_properties_changed (GDBusProxy *_proxy,
   GVariant *changed_properties,
   const gchar *const *invalidated_properties)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalProxy *proxy = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_PROXY (_proxy);
+  BjsComBjsObjectManagerAnimalProxy *proxy = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_PROXY (_proxy);
   guint n;
   const gchar *key;
   GVariantIter *iter;
@@ -739,7 +739,7 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_g_properties_changed (GDBu
   g_variant_get (changed_properties, "a{sv}", &iter);
   while (g_variant_iter_next (iter, "{&sv}", &key, NULL))
     {
-      info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_org_gtk_gdbus_example_object_manager_animal_interface_info.parent_struct, key);
+      info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_com_bjs_object_manager_animal_interface_info.parent_struct, key);
       g_datalist_remove_data (&proxy->priv->qdata, key);
       if (info != NULL)
         g_object_notify (G_OBJECT (proxy), info->hyphen_name);
@@ -747,7 +747,7 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_g_properties_changed (GDBu
   g_variant_iter_free (iter);
   for (n = 0; invalidated_properties[n] != NULL; n++)
     {
-      info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_org_gtk_gdbus_example_object_manager_animal_interface_info.parent_struct, invalidated_properties[n]);
+      info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_com_bjs_object_manager_animal_interface_info.parent_struct, invalidated_properties[n]);
       g_datalist_remove_data (&proxy->priv->qdata, invalidated_properties[n]);
       if (info != NULL)
         g_object_notify (G_OBJECT (proxy), info->hyphen_name);
@@ -755,9 +755,9 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_g_properties_changed (GDBu
 }
 
 static const gchar *
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_get_mood (BjsOrgGtkGDBusExampleObjectManagerAnimal *object)
+bjs_com_bjs_object_manager_animal_proxy_get_mood (BjsComBjsObjectManagerAnimal *object)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalProxy *proxy = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_PROXY (object);
+  BjsComBjsObjectManagerAnimalProxy *proxy = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_PROXY (object);
   GVariant *variant;
   const gchar *value = NULL;
   variant = g_dbus_proxy_get_cached_property (G_DBUS_PROXY (proxy), "Mood");
@@ -770,47 +770,47 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_get_mood (BjsOrgGtkGDBusEx
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_init (BjsOrgGtkGDBusExampleObjectManagerAnimalProxy *proxy)
+bjs_com_bjs_object_manager_animal_proxy_init (BjsComBjsObjectManagerAnimalProxy *proxy)
 {
 #if GLIB_VERSION_MAX_ALLOWED >= GLIB_VERSION_2_38
-  proxy->priv = bjs_org_gtk_gdbus_example_object_manager_animal_proxy_get_instance_private (proxy);
+  proxy->priv = bjs_com_bjs_object_manager_animal_proxy_get_instance_private (proxy);
 #else
-  proxy->priv = G_TYPE_INSTANCE_GET_PRIVATE (proxy, BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_PROXY, BjsOrgGtkGDBusExampleObjectManagerAnimalProxyPrivate);
+  proxy->priv = G_TYPE_INSTANCE_GET_PRIVATE (proxy, BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL_PROXY, BjsComBjsObjectManagerAnimalProxyPrivate);
 #endif
 
-  g_dbus_proxy_set_interface_info (G_DBUS_PROXY (proxy), bjs_org_gtk_gdbus_example_object_manager_animal_interface_info ());
+  g_dbus_proxy_set_interface_info (G_DBUS_PROXY (proxy), bjs_com_bjs_object_manager_animal_interface_info ());
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_class_init (BjsOrgGtkGDBusExampleObjectManagerAnimalProxyClass *klass)
+bjs_com_bjs_object_manager_animal_proxy_class_init (BjsComBjsObjectManagerAnimalProxyClass *klass)
 {
   GObjectClass *gobject_class;
   GDBusProxyClass *proxy_class;
 
   gobject_class = G_OBJECT_CLASS (klass);
-  gobject_class->finalize     = bjs_org_gtk_gdbus_example_object_manager_animal_proxy_finalize;
-  gobject_class->get_property = bjs_org_gtk_gdbus_example_object_manager_animal_proxy_get_property;
-  gobject_class->set_property = bjs_org_gtk_gdbus_example_object_manager_animal_proxy_set_property;
+  gobject_class->finalize     = bjs_com_bjs_object_manager_animal_proxy_finalize;
+  gobject_class->get_property = bjs_com_bjs_object_manager_animal_proxy_get_property;
+  gobject_class->set_property = bjs_com_bjs_object_manager_animal_proxy_set_property;
 
   proxy_class = G_DBUS_PROXY_CLASS (klass);
-  proxy_class->g_signal = bjs_org_gtk_gdbus_example_object_manager_animal_proxy_g_signal;
-  proxy_class->g_properties_changed = bjs_org_gtk_gdbus_example_object_manager_animal_proxy_g_properties_changed;
+  proxy_class->g_signal = bjs_com_bjs_object_manager_animal_proxy_g_signal;
+  proxy_class->g_properties_changed = bjs_com_bjs_object_manager_animal_proxy_g_properties_changed;
 
-  bjs_org_gtk_gdbus_example_object_manager_animal_override_properties (gobject_class, 1);
+  bjs_com_bjs_object_manager_animal_override_properties (gobject_class, 1);
 
 #if GLIB_VERSION_MAX_ALLOWED < GLIB_VERSION_2_38
-  g_type_class_add_private (klass, sizeof (BjsOrgGtkGDBusExampleObjectManagerAnimalProxyPrivate));
+  g_type_class_add_private (klass, sizeof (BjsComBjsObjectManagerAnimalProxyPrivate));
 #endif
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_iface_init (BjsOrgGtkGDBusExampleObjectManagerAnimalIface *iface)
+bjs_com_bjs_object_manager_animal_proxy_iface_init (BjsComBjsObjectManagerAnimalIface *iface)
 {
-  iface->get_mood = bjs_org_gtk_gdbus_example_object_manager_animal_proxy_get_mood;
+  iface->get_mood = bjs_com_bjs_object_manager_animal_proxy_get_mood;
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new:
+ * bjs_com_bjs_object_manager_animal_proxy_new:
  * @connection: A #GDBusConnection.
  * @flags: Flags from the #GDBusProxyFlags enumeration.
  * @name: (allow-none): A bus name (well-known or unique) or %NULL if @connection is not a message bus connection.
@@ -819,15 +819,15 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_iface_init (BjsOrgGtkGDBus
  * @callback: A #GAsyncReadyCallback to call when the request is satisfied.
  * @user_data: User data to pass to @callback.
  *
- * Asynchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Animal.top_of_page">org.gtk.GDBus.Example.ObjectManager.Animal</link>. See g_dbus_proxy_new() for more details.
+ * Asynchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-bjs-ObjectManager-Animal.top_of_page">com.bjs.ObjectManager.Animal</link>. See g_dbus_proxy_new() for more details.
  *
  * When the operation is finished, @callback will be invoked in the <link linkend="g-main-context-push-thread-default">thread-default main loop</link> of the thread you are calling this method from.
- * You can then call bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_finish() to get the result of the operation.
+ * You can then call bjs_com_bjs_object_manager_animal_proxy_new_finish() to get the result of the operation.
  *
- * See bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_sync() for the synchronous, blocking version of this constructor.
+ * See bjs_com_bjs_object_manager_animal_proxy_new_sync() for the synchronous, blocking version of this constructor.
  */
 void
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new (
+bjs_com_bjs_object_manager_animal_proxy_new (
     GDBusConnection     *connection,
     GDBusProxyFlags      flags,
     const gchar         *name,
@@ -836,20 +836,20 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new (
     GAsyncReadyCallback  callback,
     gpointer             user_data)
 {
-  g_async_initable_new_async (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "org.gtk.GDBus.Example.ObjectManager.Animal", NULL);
+  g_async_initable_new_async (BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "com.bjs.ObjectManager.Animal", NULL);
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_finish:
- * @res: The #GAsyncResult obtained from the #GAsyncReadyCallback passed to bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new().
+ * bjs_com_bjs_object_manager_animal_proxy_new_finish:
+ * @res: The #GAsyncResult obtained from the #GAsyncReadyCallback passed to bjs_com_bjs_object_manager_animal_proxy_new().
  * @error: Return location for error or %NULL
  *
- * Finishes an operation started with bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new().
+ * Finishes an operation started with bjs_com_bjs_object_manager_animal_proxy_new().
  *
- * Returns: (transfer full) (type BjsOrgGtkGDBusExampleObjectManagerAnimalProxy): The constructed proxy object or %NULL if @error is set.
+ * Returns: (transfer full) (type BjsComBjsObjectManagerAnimalProxy): The constructed proxy object or %NULL if @error is set.
  */
-BjsOrgGtkGDBusExampleObjectManagerAnimal *
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_finish (
+BjsComBjsObjectManagerAnimal *
+bjs_com_bjs_object_manager_animal_proxy_new_finish (
     GAsyncResult        *res,
     GError             **error)
 {
@@ -859,13 +859,13 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_finish (
   ret = g_async_initable_new_finish (G_ASYNC_INITABLE (source_object), res, error);
   g_object_unref (source_object);
   if (ret != NULL)
-    return BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL (ret);
+    return BJS_COM_BJS_OBJECT_MANAGER_ANIMAL (ret);
   else
     return NULL;
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_sync:
+ * bjs_com_bjs_object_manager_animal_proxy_new_sync:
  * @connection: A #GDBusConnection.
  * @flags: Flags from the #GDBusProxyFlags enumeration.
  * @name: (allow-none): A bus name (well-known or unique) or %NULL if @connection is not a message bus connection.
@@ -873,16 +873,16 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_finish (
  * @cancellable: (allow-none): A #GCancellable or %NULL.
  * @error: Return location for error or %NULL
  *
- * Synchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Animal.top_of_page">org.gtk.GDBus.Example.ObjectManager.Animal</link>. See g_dbus_proxy_new_sync() for more details.
+ * Synchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-bjs-ObjectManager-Animal.top_of_page">com.bjs.ObjectManager.Animal</link>. See g_dbus_proxy_new_sync() for more details.
  *
  * The calling thread is blocked until a reply is received.
  *
- * See bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new() for the asynchronous version of this constructor.
+ * See bjs_com_bjs_object_manager_animal_proxy_new() for the asynchronous version of this constructor.
  *
- * Returns: (transfer full) (type BjsOrgGtkGDBusExampleObjectManagerAnimalProxy): The constructed proxy object or %NULL if @error is set.
+ * Returns: (transfer full) (type BjsComBjsObjectManagerAnimalProxy): The constructed proxy object or %NULL if @error is set.
  */
-BjsOrgGtkGDBusExampleObjectManagerAnimal *
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_sync (
+BjsComBjsObjectManagerAnimal *
+bjs_com_bjs_object_manager_animal_proxy_new_sync (
     GDBusConnection     *connection,
     GDBusProxyFlags      flags,
     const gchar         *name,
@@ -891,16 +891,16 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_sync (
     GError             **error)
 {
   GInitable *ret;
-  ret = g_initable_new (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "org.gtk.GDBus.Example.ObjectManager.Animal", NULL);
+  ret = g_initable_new (BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "com.bjs.ObjectManager.Animal", NULL);
   if (ret != NULL)
-    return BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL (ret);
+    return BJS_COM_BJS_OBJECT_MANAGER_ANIMAL (ret);
   else
     return NULL;
 }
 
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus:
+ * bjs_com_bjs_object_manager_animal_proxy_new_for_bus:
  * @bus_type: A #GBusType.
  * @flags: Flags from the #GDBusProxyFlags enumeration.
  * @name: A bus name (well-known or unique).
@@ -909,15 +909,15 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_sync (
  * @callback: A #GAsyncReadyCallback to call when the request is satisfied.
  * @user_data: User data to pass to @callback.
  *
- * Like bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new() but takes a #GBusType instead of a #GDBusConnection.
+ * Like bjs_com_bjs_object_manager_animal_proxy_new() but takes a #GBusType instead of a #GDBusConnection.
  *
  * When the operation is finished, @callback will be invoked in the <link linkend="g-main-context-push-thread-default">thread-default main loop</link> of the thread you are calling this method from.
- * You can then call bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus_finish() to get the result of the operation.
+ * You can then call bjs_com_bjs_object_manager_animal_proxy_new_for_bus_finish() to get the result of the operation.
  *
- * See bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus_sync() for the synchronous, blocking version of this constructor.
+ * See bjs_com_bjs_object_manager_animal_proxy_new_for_bus_sync() for the synchronous, blocking version of this constructor.
  */
 void
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus (
+bjs_com_bjs_object_manager_animal_proxy_new_for_bus (
     GBusType             bus_type,
     GDBusProxyFlags      flags,
     const gchar         *name,
@@ -926,20 +926,20 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus (
     GAsyncReadyCallback  callback,
     gpointer             user_data)
 {
-  g_async_initable_new_async (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "org.gtk.GDBus.Example.ObjectManager.Animal", NULL);
+  g_async_initable_new_async (BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "com.bjs.ObjectManager.Animal", NULL);
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus_finish:
- * @res: The #GAsyncResult obtained from the #GAsyncReadyCallback passed to bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus().
+ * bjs_com_bjs_object_manager_animal_proxy_new_for_bus_finish:
+ * @res: The #GAsyncResult obtained from the #GAsyncReadyCallback passed to bjs_com_bjs_object_manager_animal_proxy_new_for_bus().
  * @error: Return location for error or %NULL
  *
- * Finishes an operation started with bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus().
+ * Finishes an operation started with bjs_com_bjs_object_manager_animal_proxy_new_for_bus().
  *
- * Returns: (transfer full) (type BjsOrgGtkGDBusExampleObjectManagerAnimalProxy): The constructed proxy object or %NULL if @error is set.
+ * Returns: (transfer full) (type BjsComBjsObjectManagerAnimalProxy): The constructed proxy object or %NULL if @error is set.
  */
-BjsOrgGtkGDBusExampleObjectManagerAnimal *
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus_finish (
+BjsComBjsObjectManagerAnimal *
+bjs_com_bjs_object_manager_animal_proxy_new_for_bus_finish (
     GAsyncResult        *res,
     GError             **error)
 {
@@ -949,13 +949,13 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus_finish (
   ret = g_async_initable_new_finish (G_ASYNC_INITABLE (source_object), res, error);
   g_object_unref (source_object);
   if (ret != NULL)
-    return BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL (ret);
+    return BJS_COM_BJS_OBJECT_MANAGER_ANIMAL (ret);
   else
     return NULL;
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus_sync:
+ * bjs_com_bjs_object_manager_animal_proxy_new_for_bus_sync:
  * @bus_type: A #GBusType.
  * @flags: Flags from the #GDBusProxyFlags enumeration.
  * @name: A bus name (well-known or unique).
@@ -963,16 +963,16 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus_finish (
  * @cancellable: (allow-none): A #GCancellable or %NULL.
  * @error: Return location for error or %NULL
  *
- * Like bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_sync() but takes a #GBusType instead of a #GDBusConnection.
+ * Like bjs_com_bjs_object_manager_animal_proxy_new_sync() but takes a #GBusType instead of a #GDBusConnection.
  *
  * The calling thread is blocked until a reply is received.
  *
- * See bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus() for the asynchronous version of this constructor.
+ * See bjs_com_bjs_object_manager_animal_proxy_new_for_bus() for the asynchronous version of this constructor.
  *
- * Returns: (transfer full) (type BjsOrgGtkGDBusExampleObjectManagerAnimalProxy): The constructed proxy object or %NULL if @error is set.
+ * Returns: (transfer full) (type BjsComBjsObjectManagerAnimalProxy): The constructed proxy object or %NULL if @error is set.
  */
-BjsOrgGtkGDBusExampleObjectManagerAnimal *
-bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus_sync (
+BjsComBjsObjectManagerAnimal *
+bjs_com_bjs_object_manager_animal_proxy_new_for_bus_sync (
     GBusType             bus_type,
     GDBusProxyFlags      flags,
     const gchar         *name,
@@ -981,9 +981,9 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus_sync (
     GError             **error)
 {
   GInitable *ret;
-  ret = g_initable_new (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "org.gtk.GDBus.Example.ObjectManager.Animal", NULL);
+  ret = g_initable_new (BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "com.bjs.ObjectManager.Animal", NULL);
   if (ret != NULL)
-    return BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL (ret);
+    return BJS_COM_BJS_OBJECT_MANAGER_ANIMAL (ret);
   else
     return NULL;
 }
@@ -992,19 +992,19 @@ bjs_org_gtk_gdbus_example_object_manager_animal_proxy_new_for_bus_sync (
 /* ------------------------------------------------------------------------ */
 
 /**
- * BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton:
+ * BjsComBjsObjectManagerAnimalSkeleton:
  *
- * The #BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton structure contains only private data and should only be accessed using the provided API.
+ * The #BjsComBjsObjectManagerAnimalSkeleton structure contains only private data and should only be accessed using the provided API.
  */
 
 /**
- * BjsOrgGtkGDBusExampleObjectManagerAnimalSkeletonClass:
+ * BjsComBjsObjectManagerAnimalSkeletonClass:
  * @parent_class: The parent class.
  *
- * Class structure for #BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton.
+ * Class structure for #BjsComBjsObjectManagerAnimalSkeleton.
  */
 
-struct _BjsOrgGtkGDBusExampleObjectManagerAnimalSkeletonPrivate
+struct _BjsComBjsObjectManagerAnimalSkeletonPrivate
 {
   GValue *properties;
   GList *changed_properties;
@@ -1014,7 +1014,7 @@ struct _BjsOrgGtkGDBusExampleObjectManagerAnimalSkeletonPrivate
 };
 
 static void
-_bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_method_call (
+_bjs_com_bjs_object_manager_animal_skeleton_handle_method_call (
   GDBusConnection *connection G_GNUC_UNUSED,
   const gchar *sender G_GNUC_UNUSED,
   const gchar *object_path G_GNUC_UNUSED,
@@ -1024,7 +1024,7 @@ _bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_method_call (
   GDBusMethodInvocation *invocation,
   gpointer user_data)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_SKELETON (user_data);
+  BjsComBjsObjectManagerAnimalSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_SKELETON (user_data);
   _ExtendedGDBusMethodInfo *info;
   GVariantIter iter;
   GVariant *child;
@@ -1039,7 +1039,7 @@ _bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_method_call (
   num_params = g_variant_n_children (parameters);
   num_extra = info->pass_fdlist ? 3 : 2;  paramv = g_new0 (GValue, num_params + num_extra);
   n = 0;
-  g_value_init (&paramv[n], BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL);
+  g_value_init (&paramv[n], BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL);
   g_value_set_object (&paramv[n++], skeleton);
   g_value_init (&paramv[n], G_TYPE_DBUS_METHOD_INVOCATION);
   g_value_set_object (&paramv[n++], invocation);
@@ -1066,7 +1066,7 @@ _bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_method_call (
         g_dbus_gvariant_to_gvalue (child, &paramv[n++]);
       g_variant_unref (child);
     }
-  signal_id = g_signal_lookup (info->signal_name, BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL);
+  signal_id = g_signal_lookup (info->signal_name, BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL);
   g_value_init (&return_value, G_TYPE_BOOLEAN);
   g_signal_emitv (paramv, signal_id, 0, &return_value);
   if (!g_value_get_boolean (&return_value))
@@ -1078,7 +1078,7 @@ _bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_method_call (
 }
 
 static GVariant *
-_bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_get_property (
+_bjs_com_bjs_object_manager_animal_skeleton_handle_get_property (
   GDBusConnection *connection G_GNUC_UNUSED,
   const gchar *sender G_GNUC_UNUSED,
   const gchar *object_path G_GNUC_UNUSED,
@@ -1087,13 +1087,13 @@ _bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_get_property (
   GError **error,
   gpointer user_data)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_SKELETON (user_data);
+  BjsComBjsObjectManagerAnimalSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_SKELETON (user_data);
   GValue value = G_VALUE_INIT;
   GParamSpec *pspec;
   _ExtendedGDBusPropertyInfo *info;
   GVariant *ret;
   ret = NULL;
-  info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_org_gtk_gdbus_example_object_manager_animal_interface_info.parent_struct, property_name);
+  info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_com_bjs_object_manager_animal_interface_info.parent_struct, property_name);
   g_assert (info != NULL);
   pspec = g_object_class_find_property (G_OBJECT_GET_CLASS (skeleton), info->hyphen_name);
   if (pspec == NULL)
@@ -1111,7 +1111,7 @@ _bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_get_property (
 }
 
 static gboolean
-_bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_set_property (
+_bjs_com_bjs_object_manager_animal_skeleton_handle_set_property (
   GDBusConnection *connection G_GNUC_UNUSED,
   const gchar *sender G_GNUC_UNUSED,
   const gchar *object_path G_GNUC_UNUSED,
@@ -1121,13 +1121,13 @@ _bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_set_property (
   GError **error,
   gpointer user_data)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_SKELETON (user_data);
+  BjsComBjsObjectManagerAnimalSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_SKELETON (user_data);
   GValue value = G_VALUE_INIT;
   GParamSpec *pspec;
   _ExtendedGDBusPropertyInfo *info;
   gboolean ret;
   ret = FALSE;
-  info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_org_gtk_gdbus_example_object_manager_animal_interface_info.parent_struct, property_name);
+  info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_com_bjs_object_manager_animal_interface_info.parent_struct, property_name);
   g_assert (info != NULL);
   pspec = g_object_class_find_property (G_OBJECT_GET_CLASS (skeleton), info->hyphen_name);
   if (pspec == NULL)
@@ -1147,43 +1147,43 @@ _bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_set_property (
   return ret;
 }
 
-static const GDBusInterfaceVTable _bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_vtable =
+static const GDBusInterfaceVTable _bjs_com_bjs_object_manager_animal_skeleton_vtable =
 {
-  _bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_method_call,
-  _bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_get_property,
-  _bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_set_property,
+  _bjs_com_bjs_object_manager_animal_skeleton_handle_method_call,
+  _bjs_com_bjs_object_manager_animal_skeleton_handle_get_property,
+  _bjs_com_bjs_object_manager_animal_skeleton_handle_set_property,
   {NULL}
 };
 
 static GDBusInterfaceInfo *
-bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_dbus_interface_get_info (GDBusInterfaceSkeleton *skeleton G_GNUC_UNUSED)
+bjs_com_bjs_object_manager_animal_skeleton_dbus_interface_get_info (GDBusInterfaceSkeleton *skeleton G_GNUC_UNUSED)
 {
-  return bjs_org_gtk_gdbus_example_object_manager_animal_interface_info ();
+  return bjs_com_bjs_object_manager_animal_interface_info ();
 }
 
 static GDBusInterfaceVTable *
-bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_dbus_interface_get_vtable (GDBusInterfaceSkeleton *skeleton G_GNUC_UNUSED)
+bjs_com_bjs_object_manager_animal_skeleton_dbus_interface_get_vtable (GDBusInterfaceSkeleton *skeleton G_GNUC_UNUSED)
 {
-  return (GDBusInterfaceVTable *) &_bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_vtable;
+  return (GDBusInterfaceVTable *) &_bjs_com_bjs_object_manager_animal_skeleton_vtable;
 }
 
 static GVariant *
-bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_dbus_interface_get_properties (GDBusInterfaceSkeleton *_skeleton)
+bjs_com_bjs_object_manager_animal_skeleton_dbus_interface_get_properties (GDBusInterfaceSkeleton *_skeleton)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_SKELETON (_skeleton);
+  BjsComBjsObjectManagerAnimalSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_SKELETON (_skeleton);
 
   GVariantBuilder builder;
   guint n;
   g_variant_builder_init (&builder, G_VARIANT_TYPE ("a{sv}"));
-  if (_bjs_org_gtk_gdbus_example_object_manager_animal_interface_info.parent_struct.properties == NULL)
+  if (_bjs_com_bjs_object_manager_animal_interface_info.parent_struct.properties == NULL)
     goto out;
-  for (n = 0; _bjs_org_gtk_gdbus_example_object_manager_animal_interface_info.parent_struct.properties[n] != NULL; n++)
+  for (n = 0; _bjs_com_bjs_object_manager_animal_interface_info.parent_struct.properties[n] != NULL; n++)
     {
-      GDBusPropertyInfo *info = _bjs_org_gtk_gdbus_example_object_manager_animal_interface_info.parent_struct.properties[n];
+      GDBusPropertyInfo *info = _bjs_com_bjs_object_manager_animal_interface_info.parent_struct.properties[n];
       if (info->flags & G_DBUS_PROPERTY_INFO_FLAGS_READABLE)
         {
           GVariant *value;
-          value = _bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_handle_get_property (g_dbus_interface_skeleton_get_connection (G_DBUS_INTERFACE_SKELETON (skeleton)), NULL, g_dbus_interface_skeleton_get_object_path (G_DBUS_INTERFACE_SKELETON (skeleton)), "org.gtk.GDBus.Example.ObjectManager.Animal", info->name, NULL, skeleton);
+          value = _bjs_com_bjs_object_manager_animal_skeleton_handle_get_property (g_dbus_interface_skeleton_get_connection (G_DBUS_INTERFACE_SKELETON (skeleton)), NULL, g_dbus_interface_skeleton_get_object_path (G_DBUS_INTERFACE_SKELETON (skeleton)), "com.bjs.ObjectManager.Animal", info->name, NULL, skeleton);
           if (value != NULL)
             {
               g_variant_take_ref (value);
@@ -1196,12 +1196,12 @@ out:
   return g_variant_builder_end (&builder);
 }
 
-static gboolean _bjs_org_gtk_gdbus_example_object_manager_animal_emit_changed (gpointer user_data);
+static gboolean _bjs_com_bjs_object_manager_animal_emit_changed (gpointer user_data);
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_dbus_interface_flush (GDBusInterfaceSkeleton *_skeleton)
+bjs_com_bjs_object_manager_animal_skeleton_dbus_interface_flush (GDBusInterfaceSkeleton *_skeleton)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_SKELETON (_skeleton);
+  BjsComBjsObjectManagerAnimalSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_SKELETON (_skeleton);
   gboolean emit_changed = FALSE;
 
   g_mutex_lock (&skeleton->priv->lock);
@@ -1214,15 +1214,15 @@ bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_dbus_interface_flush (G
   g_mutex_unlock (&skeleton->priv->lock);
 
   if (emit_changed)
-    _bjs_org_gtk_gdbus_example_object_manager_animal_emit_changed (skeleton);
+    _bjs_com_bjs_object_manager_animal_emit_changed (skeleton);
 }
 
 static void
-_bjs_org_gtk_gdbus_example_object_manager_animal_on_signal_jumped (
-    BjsOrgGtkGDBusExampleObjectManagerAnimal *object,
+_bjs_com_bjs_object_manager_animal_on_signal_jumped (
+    BjsComBjsObjectManagerAnimal *object,
     gdouble arg_height)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_SKELETON (object);
+  BjsComBjsObjectManagerAnimalSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_SKELETON (object);
 
   GList      *connections, *l;
   GVariant   *signal_variant;
@@ -1234,28 +1234,28 @@ _bjs_org_gtk_gdbus_example_object_manager_animal_on_signal_jumped (
     {
       GDBusConnection *connection = l->data;
       g_dbus_connection_emit_signal (connection,
-        NULL, g_dbus_interface_skeleton_get_object_path (G_DBUS_INTERFACE_SKELETON (skeleton)), "org.gtk.GDBus.Example.ObjectManager.Animal", "Jumped",
+        NULL, g_dbus_interface_skeleton_get_object_path (G_DBUS_INTERFACE_SKELETON (skeleton)), "com.bjs.ObjectManager.Animal", "Jumped",
         signal_variant, NULL);
     }
   g_variant_unref (signal_variant);
   g_list_free_full (connections, g_object_unref);
 }
 
-static void bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_iface_init (BjsOrgGtkGDBusExampleObjectManagerAnimalIface *iface);
+static void bjs_com_bjs_object_manager_animal_skeleton_iface_init (BjsComBjsObjectManagerAnimalIface *iface);
 #if GLIB_VERSION_MAX_ALLOWED >= GLIB_VERSION_2_38
-G_DEFINE_TYPE_WITH_CODE (BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton, bjs_org_gtk_gdbus_example_object_manager_animal_skeleton, G_TYPE_DBUS_INTERFACE_SKELETON,
-                         G_ADD_PRIVATE (BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton)
-                         G_IMPLEMENT_INTERFACE (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL, bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_iface_init));
+G_DEFINE_TYPE_WITH_CODE (BjsComBjsObjectManagerAnimalSkeleton, bjs_com_bjs_object_manager_animal_skeleton, G_TYPE_DBUS_INTERFACE_SKELETON,
+                         G_ADD_PRIVATE (BjsComBjsObjectManagerAnimalSkeleton)
+                         G_IMPLEMENT_INTERFACE (BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL, bjs_com_bjs_object_manager_animal_skeleton_iface_init));
 
 #else
-G_DEFINE_TYPE_WITH_CODE (BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton, bjs_org_gtk_gdbus_example_object_manager_animal_skeleton, G_TYPE_DBUS_INTERFACE_SKELETON,
-                         G_IMPLEMENT_INTERFACE (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL, bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_iface_init));
+G_DEFINE_TYPE_WITH_CODE (BjsComBjsObjectManagerAnimalSkeleton, bjs_com_bjs_object_manager_animal_skeleton, G_TYPE_DBUS_INTERFACE_SKELETON,
+                         G_IMPLEMENT_INTERFACE (BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL, bjs_com_bjs_object_manager_animal_skeleton_iface_init));
 
 #endif
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_finalize (GObject *object)
+bjs_com_bjs_object_manager_animal_skeleton_finalize (GObject *object)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_SKELETON (object);
+  BjsComBjsObjectManagerAnimalSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_SKELETON (object);
   guint n;
   for (n = 0; n < 1; n++)
     g_value_unset (&skeleton->priv->properties[n]);
@@ -1265,16 +1265,16 @@ bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_finalize (GObject *obje
     g_source_destroy (skeleton->priv->changed_properties_idle_source);
   g_main_context_unref (skeleton->priv->context);
   g_mutex_clear (&skeleton->priv->lock);
-  G_OBJECT_CLASS (bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_parent_class)->finalize (object);
+  G_OBJECT_CLASS (bjs_com_bjs_object_manager_animal_skeleton_parent_class)->finalize (object);
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_get_property (GObject      *object,
+bjs_com_bjs_object_manager_animal_skeleton_get_property (GObject      *object,
   guint         prop_id,
   GValue       *value,
   GParamSpec   *pspec G_GNUC_UNUSED)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_SKELETON (object);
+  BjsComBjsObjectManagerAnimalSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_SKELETON (object);
   g_assert (prop_id != 0 && prop_id - 1 < 1);
   g_mutex_lock (&skeleton->priv->lock);
   g_value_copy (&skeleton->priv->properties[prop_id - 1], value);
@@ -1282,9 +1282,9 @@ bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_get_property (GObject  
 }
 
 static gboolean
-_bjs_org_gtk_gdbus_example_object_manager_animal_emit_changed (gpointer user_data)
+_bjs_com_bjs_object_manager_animal_emit_changed (gpointer user_data)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_SKELETON (user_data);
+  BjsComBjsObjectManagerAnimalSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_SKELETON (user_data);
   GList *l;
   GVariantBuilder builder;
   GVariantBuilder invalidated_builder;
@@ -1312,7 +1312,7 @@ _bjs_org_gtk_gdbus_example_object_manager_animal_emit_changed (gpointer user_dat
     {
       GList *connections, *ll;
       GVariant *signal_variant;
-      signal_variant = g_variant_ref_sink (g_variant_new ("(sa{sv}as)", "org.gtk.GDBus.Example.ObjectManager.Animal",
+      signal_variant = g_variant_ref_sink (g_variant_new ("(sa{sv}as)", "com.bjs.ObjectManager.Animal",
                                            &builder, &invalidated_builder));
       connections = g_dbus_interface_skeleton_get_connections (G_DBUS_INTERFACE_SKELETON (skeleton));
       for (ll = connections; ll != NULL; ll = ll->next)
@@ -1342,7 +1342,7 @@ _bjs_org_gtk_gdbus_example_object_manager_animal_emit_changed (gpointer user_dat
 }
 
 static void
-_bjs_org_gtk_gdbus_example_object_manager_animal_schedule_emit_changed (BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton *skeleton, const _ExtendedGDBusPropertyInfo *info, guint prop_id, const GValue *orig_value)
+_bjs_com_bjs_object_manager_animal_schedule_emit_changed (BjsComBjsObjectManagerAnimalSkeleton *skeleton, const _ExtendedGDBusPropertyInfo *info, guint prop_id, const GValue *orig_value)
 {
   ChangedProperty *cp;
   GList *l;
@@ -1368,18 +1368,18 @@ _bjs_org_gtk_gdbus_example_object_manager_animal_schedule_emit_changed (BjsOrgGt
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_notify (GObject      *object,
+bjs_com_bjs_object_manager_animal_skeleton_notify (GObject      *object,
   GParamSpec *pspec G_GNUC_UNUSED)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_SKELETON (object);
+  BjsComBjsObjectManagerAnimalSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_SKELETON (object);
   g_mutex_lock (&skeleton->priv->lock);
   if (skeleton->priv->changed_properties != NULL &&
       skeleton->priv->changed_properties_idle_source == NULL)
     {
       skeleton->priv->changed_properties_idle_source = g_idle_source_new ();
       g_source_set_priority (skeleton->priv->changed_properties_idle_source, G_PRIORITY_DEFAULT);
-      g_source_set_callback (skeleton->priv->changed_properties_idle_source, _bjs_org_gtk_gdbus_example_object_manager_animal_emit_changed, g_object_ref (skeleton), (GDestroyNotify) g_object_unref);
-      g_source_set_name (skeleton->priv->changed_properties_idle_source, "[generated] _bjs_org_gtk_gdbus_example_object_manager_animal_emit_changed");
+      g_source_set_callback (skeleton->priv->changed_properties_idle_source, _bjs_com_bjs_object_manager_animal_emit_changed, g_object_ref (skeleton), (GDestroyNotify) g_object_unref);
+      g_source_set_name (skeleton->priv->changed_properties_idle_source, "[generated] _bjs_com_bjs_object_manager_animal_emit_changed");
       g_source_attach (skeleton->priv->changed_properties_idle_source, skeleton->priv->context);
       g_source_unref (skeleton->priv->changed_properties_idle_source);
     }
@@ -1387,19 +1387,19 @@ bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_notify (GObject      *o
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_set_property (GObject      *object,
+bjs_com_bjs_object_manager_animal_skeleton_set_property (GObject      *object,
   guint         prop_id,
   const GValue *value,
   GParamSpec   *pspec)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_SKELETON (object);
+  BjsComBjsObjectManagerAnimalSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_SKELETON (object);
   g_assert (prop_id != 0 && prop_id - 1 < 1);
   g_mutex_lock (&skeleton->priv->lock);
   g_object_freeze_notify (object);
   if (!_g_value_equal (value, &skeleton->priv->properties[prop_id - 1]))
     {
       if (g_dbus_interface_skeleton_get_connection (G_DBUS_INTERFACE_SKELETON (skeleton)) != NULL)
-        _bjs_org_gtk_gdbus_example_object_manager_animal_schedule_emit_changed (skeleton, _bjs_org_gtk_gdbus_example_object_manager_animal_property_info_pointers[prop_id - 1], prop_id, &skeleton->priv->properties[prop_id - 1]);
+        _bjs_com_bjs_object_manager_animal_schedule_emit_changed (skeleton, _bjs_com_bjs_object_manager_animal_property_info_pointers[prop_id - 1], prop_id, &skeleton->priv->properties[prop_id - 1]);
       g_value_copy (value, &skeleton->priv->properties[prop_id - 1]);
       g_object_notify_by_pspec (object, pspec);
     }
@@ -1408,12 +1408,12 @@ bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_set_property (GObject  
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_init (BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton *skeleton)
+bjs_com_bjs_object_manager_animal_skeleton_init (BjsComBjsObjectManagerAnimalSkeleton *skeleton)
 {
 #if GLIB_VERSION_MAX_ALLOWED >= GLIB_VERSION_2_38
-  skeleton->priv = bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_get_instance_private (skeleton);
+  skeleton->priv = bjs_com_bjs_object_manager_animal_skeleton_get_instance_private (skeleton);
 #else
-  skeleton->priv = G_TYPE_INSTANCE_GET_PRIVATE (skeleton, BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_SKELETON, BjsOrgGtkGDBusExampleObjectManagerAnimalSkeletonPrivate);
+  skeleton->priv = G_TYPE_INSTANCE_GET_PRIVATE (skeleton, BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL_SKELETON, BjsComBjsObjectManagerAnimalSkeletonPrivate);
 #endif
 
   g_mutex_init (&skeleton->priv->lock);
@@ -1423,9 +1423,9 @@ bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_init (BjsOrgGtkGDBusExa
 }
 
 static const gchar *
-bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_get_mood (BjsOrgGtkGDBusExampleObjectManagerAnimal *object)
+bjs_com_bjs_object_manager_animal_skeleton_get_mood (BjsComBjsObjectManagerAnimal *object)
 {
-  BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_SKELETON (object);
+  BjsComBjsObjectManagerAnimalSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_ANIMAL_SKELETON (object);
   const gchar *value;
   g_mutex_lock (&skeleton->priv->lock);
   value = g_value_get_string (&(skeleton->priv->properties[0]));
@@ -1434,105 +1434,105 @@ bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_get_mood (BjsOrgGtkGDBu
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_class_init (BjsOrgGtkGDBusExampleObjectManagerAnimalSkeletonClass *klass)
+bjs_com_bjs_object_manager_animal_skeleton_class_init (BjsComBjsObjectManagerAnimalSkeletonClass *klass)
 {
   GObjectClass *gobject_class;
   GDBusInterfaceSkeletonClass *skeleton_class;
 
   gobject_class = G_OBJECT_CLASS (klass);
-  gobject_class->finalize = bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_finalize;
-  gobject_class->get_property = bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_get_property;
-  gobject_class->set_property = bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_set_property;
-  gobject_class->notify       = bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_notify;
+  gobject_class->finalize = bjs_com_bjs_object_manager_animal_skeleton_finalize;
+  gobject_class->get_property = bjs_com_bjs_object_manager_animal_skeleton_get_property;
+  gobject_class->set_property = bjs_com_bjs_object_manager_animal_skeleton_set_property;
+  gobject_class->notify       = bjs_com_bjs_object_manager_animal_skeleton_notify;
 
 
-  bjs_org_gtk_gdbus_example_object_manager_animal_override_properties (gobject_class, 1);
+  bjs_com_bjs_object_manager_animal_override_properties (gobject_class, 1);
 
   skeleton_class = G_DBUS_INTERFACE_SKELETON_CLASS (klass);
-  skeleton_class->get_info = bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_dbus_interface_get_info;
-  skeleton_class->get_properties = bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_dbus_interface_get_properties;
-  skeleton_class->flush = bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_dbus_interface_flush;
-  skeleton_class->get_vtable = bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_dbus_interface_get_vtable;
+  skeleton_class->get_info = bjs_com_bjs_object_manager_animal_skeleton_dbus_interface_get_info;
+  skeleton_class->get_properties = bjs_com_bjs_object_manager_animal_skeleton_dbus_interface_get_properties;
+  skeleton_class->flush = bjs_com_bjs_object_manager_animal_skeleton_dbus_interface_flush;
+  skeleton_class->get_vtable = bjs_com_bjs_object_manager_animal_skeleton_dbus_interface_get_vtable;
 
 #if GLIB_VERSION_MAX_ALLOWED < GLIB_VERSION_2_38
-  g_type_class_add_private (klass, sizeof (BjsOrgGtkGDBusExampleObjectManagerAnimalSkeletonPrivate));
+  g_type_class_add_private (klass, sizeof (BjsComBjsObjectManagerAnimalSkeletonPrivate));
 #endif
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_iface_init (BjsOrgGtkGDBusExampleObjectManagerAnimalIface *iface)
+bjs_com_bjs_object_manager_animal_skeleton_iface_init (BjsComBjsObjectManagerAnimalIface *iface)
 {
-  iface->jumped = _bjs_org_gtk_gdbus_example_object_manager_animal_on_signal_jumped;
-  iface->get_mood = bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_get_mood;
+  iface->jumped = _bjs_com_bjs_object_manager_animal_on_signal_jumped;
+  iface->get_mood = bjs_com_bjs_object_manager_animal_skeleton_get_mood;
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_new:
+ * bjs_com_bjs_object_manager_animal_skeleton_new:
  *
- * Creates a skeleton object for the D-Bus interface <link linkend="gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Animal.top_of_page">org.gtk.GDBus.Example.ObjectManager.Animal</link>.
+ * Creates a skeleton object for the D-Bus interface <link linkend="gdbus-interface-com-bjs-ObjectManager-Animal.top_of_page">com.bjs.ObjectManager.Animal</link>.
  *
- * Returns: (transfer full) (type BjsOrgGtkGDBusExampleObjectManagerAnimalSkeleton): The skeleton object.
+ * Returns: (transfer full) (type BjsComBjsObjectManagerAnimalSkeleton): The skeleton object.
  */
-BjsOrgGtkGDBusExampleObjectManagerAnimal *
-bjs_org_gtk_gdbus_example_object_manager_animal_skeleton_new (void)
+BjsComBjsObjectManagerAnimal *
+bjs_com_bjs_object_manager_animal_skeleton_new (void)
 {
-  return BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL (g_object_new (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_ANIMAL_SKELETON, NULL));
+  return BJS_COM_BJS_OBJECT_MANAGER_ANIMAL (g_object_new (BJS_TYPE_COM_BJS_OBJECT_MANAGER_ANIMAL_SKELETON, NULL));
 }
 
 /* ------------------------------------------------------------------------
- * Code for interface org.gtk.GDBus.Example.ObjectManager.Cat
+ * Code for interface com.bjs.ObjectManager.Cat
  * ------------------------------------------------------------------------
  */
 
 /**
- * SECTION:BjsOrgGtkGDBusExampleObjectManagerCat
- * @title: BjsOrgGtkGDBusExampleObjectManagerCat
- * @short_description: Generated C code for the org.gtk.GDBus.Example.ObjectManager.Cat D-Bus interface
+ * SECTION:BjsComBjsObjectManagerCat
+ * @title: BjsComBjsObjectManagerCat
+ * @short_description: Generated C code for the com.bjs.ObjectManager.Cat D-Bus interface
  *
- * This section contains code for working with the <link linkend="gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Cat.top_of_page">org.gtk.GDBus.Example.ObjectManager.Cat</link> D-Bus interface in C.
+ * This section contains code for working with the <link linkend="gdbus-interface-com-bjs-ObjectManager-Cat.top_of_page">com.bjs.ObjectManager.Cat</link> D-Bus interface in C.
  */
 
-/* ---- Introspection data for org.gtk.GDBus.Example.ObjectManager.Cat ---- */
+/* ---- Introspection data for com.bjs.ObjectManager.Cat ---- */
 
-static const _ExtendedGDBusInterfaceInfo _bjs_org_gtk_gdbus_example_object_manager_cat_interface_info =
+static const _ExtendedGDBusInterfaceInfo _bjs_com_bjs_object_manager_cat_interface_info =
 {
   {
     -1,
-    (gchar *) "org.gtk.GDBus.Example.ObjectManager.Cat",
+    (gchar *) "com.bjs.ObjectManager.Cat",
     NULL,
     NULL,
     NULL,
     NULL
   },
-  "org-gtk-gdbus-example-object-manager-cat",
+  "com-bjs-object-manager-cat",
 };
 
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_cat_interface_info:
+ * bjs_com_bjs_object_manager_cat_interface_info:
  *
- * Gets a machine-readable description of the <link linkend="gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Cat.top_of_page">org.gtk.GDBus.Example.ObjectManager.Cat</link> D-Bus interface.
+ * Gets a machine-readable description of the <link linkend="gdbus-interface-com-bjs-ObjectManager-Cat.top_of_page">com.bjs.ObjectManager.Cat</link> D-Bus interface.
  *
  * Returns: (transfer none): A #GDBusInterfaceInfo. Do not free.
  */
 GDBusInterfaceInfo *
-bjs_org_gtk_gdbus_example_object_manager_cat_interface_info (void)
+bjs_com_bjs_object_manager_cat_interface_info (void)
 {
-  return (GDBusInterfaceInfo *) &_bjs_org_gtk_gdbus_example_object_manager_cat_interface_info.parent_struct;
+  return (GDBusInterfaceInfo *) &_bjs_com_bjs_object_manager_cat_interface_info.parent_struct;
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_cat_override_properties:
+ * bjs_com_bjs_object_manager_cat_override_properties:
  * @klass: The class structure for a #GObject<!-- -->-derived class.
  * @property_id_begin: The property id to assign to the first overridden property.
  *
- * Overrides all #GObject properties in the #BjsOrgGtkGDBusExampleObjectManagerCat interface for a concrete class.
+ * Overrides all #GObject properties in the #BjsComBjsObjectManagerCat interface for a concrete class.
  * The properties are overridden in the order they are defined.
  *
  * Returns: The last property id.
  */
 guint
-bjs_org_gtk_gdbus_example_object_manager_cat_override_properties (GObjectClass *klass, guint property_id_begin)
+bjs_com_bjs_object_manager_cat_override_properties (GObjectClass *klass, guint property_id_begin)
 {
   return property_id_begin - 1;
 }
@@ -1540,68 +1540,68 @@ bjs_org_gtk_gdbus_example_object_manager_cat_override_properties (GObjectClass *
 
 
 /**
- * BjsOrgGtkGDBusExampleObjectManagerCat:
+ * BjsComBjsObjectManagerCat:
  *
- * Abstract interface type for the D-Bus interface <link linkend="gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Cat.top_of_page">org.gtk.GDBus.Example.ObjectManager.Cat</link>.
+ * Abstract interface type for the D-Bus interface <link linkend="gdbus-interface-com-bjs-ObjectManager-Cat.top_of_page">com.bjs.ObjectManager.Cat</link>.
  */
 
 /**
- * BjsOrgGtkGDBusExampleObjectManagerCatIface:
+ * BjsComBjsObjectManagerCatIface:
  * @parent_iface: The parent interface.
  *
- * Virtual table for the D-Bus interface <link linkend="gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Cat.top_of_page">org.gtk.GDBus.Example.ObjectManager.Cat</link>.
+ * Virtual table for the D-Bus interface <link linkend="gdbus-interface-com-bjs-ObjectManager-Cat.top_of_page">com.bjs.ObjectManager.Cat</link>.
  */
 
-typedef BjsOrgGtkGDBusExampleObjectManagerCatIface BjsOrgGtkGDBusExampleObjectManagerCatInterface;
-G_DEFINE_INTERFACE (BjsOrgGtkGDBusExampleObjectManagerCat, bjs_org_gtk_gdbus_example_object_manager_cat, G_TYPE_OBJECT);
+typedef BjsComBjsObjectManagerCatIface BjsComBjsObjectManagerCatInterface;
+G_DEFINE_INTERFACE (BjsComBjsObjectManagerCat, bjs_com_bjs_object_manager_cat, G_TYPE_OBJECT);
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_cat_default_init (BjsOrgGtkGDBusExampleObjectManagerCatIface *iface)
+bjs_com_bjs_object_manager_cat_default_init (BjsComBjsObjectManagerCatIface *iface)
 {
 }
 
 /* ------------------------------------------------------------------------ */
 
 /**
- * BjsOrgGtkGDBusExampleObjectManagerCatProxy:
+ * BjsComBjsObjectManagerCatProxy:
  *
- * The #BjsOrgGtkGDBusExampleObjectManagerCatProxy structure contains only private data and should only be accessed using the provided API.
+ * The #BjsComBjsObjectManagerCatProxy structure contains only private data and should only be accessed using the provided API.
  */
 
 /**
- * BjsOrgGtkGDBusExampleObjectManagerCatProxyClass:
+ * BjsComBjsObjectManagerCatProxyClass:
  * @parent_class: The parent class.
  *
- * Class structure for #BjsOrgGtkGDBusExampleObjectManagerCatProxy.
+ * Class structure for #BjsComBjsObjectManagerCatProxy.
  */
 
-struct _BjsOrgGtkGDBusExampleObjectManagerCatProxyPrivate
+struct _BjsComBjsObjectManagerCatProxyPrivate
 {
   GData *qdata;
 };
 
-static void bjs_org_gtk_gdbus_example_object_manager_cat_proxy_iface_init (BjsOrgGtkGDBusExampleObjectManagerCatIface *iface);
+static void bjs_com_bjs_object_manager_cat_proxy_iface_init (BjsComBjsObjectManagerCatIface *iface);
 
 #if GLIB_VERSION_MAX_ALLOWED >= GLIB_VERSION_2_38
-G_DEFINE_TYPE_WITH_CODE (BjsOrgGtkGDBusExampleObjectManagerCatProxy, bjs_org_gtk_gdbus_example_object_manager_cat_proxy, G_TYPE_DBUS_PROXY,
-                         G_ADD_PRIVATE (BjsOrgGtkGDBusExampleObjectManagerCatProxy)
-                         G_IMPLEMENT_INTERFACE (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT, bjs_org_gtk_gdbus_example_object_manager_cat_proxy_iface_init));
+G_DEFINE_TYPE_WITH_CODE (BjsComBjsObjectManagerCatProxy, bjs_com_bjs_object_manager_cat_proxy, G_TYPE_DBUS_PROXY,
+                         G_ADD_PRIVATE (BjsComBjsObjectManagerCatProxy)
+                         G_IMPLEMENT_INTERFACE (BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT, bjs_com_bjs_object_manager_cat_proxy_iface_init));
 
 #else
-G_DEFINE_TYPE_WITH_CODE (BjsOrgGtkGDBusExampleObjectManagerCatProxy, bjs_org_gtk_gdbus_example_object_manager_cat_proxy, G_TYPE_DBUS_PROXY,
-                         G_IMPLEMENT_INTERFACE (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT, bjs_org_gtk_gdbus_example_object_manager_cat_proxy_iface_init));
+G_DEFINE_TYPE_WITH_CODE (BjsComBjsObjectManagerCatProxy, bjs_com_bjs_object_manager_cat_proxy, G_TYPE_DBUS_PROXY,
+                         G_IMPLEMENT_INTERFACE (BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT, bjs_com_bjs_object_manager_cat_proxy_iface_init));
 
 #endif
 static void
-bjs_org_gtk_gdbus_example_object_manager_cat_proxy_finalize (GObject *object)
+bjs_com_bjs_object_manager_cat_proxy_finalize (GObject *object)
 {
-  BjsOrgGtkGDBusExampleObjectManagerCatProxy *proxy = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT_PROXY (object);
+  BjsComBjsObjectManagerCatProxy *proxy = BJS_COM_BJS_OBJECT_MANAGER_CAT_PROXY (object);
   g_datalist_clear (&proxy->priv->qdata);
-  G_OBJECT_CLASS (bjs_org_gtk_gdbus_example_object_manager_cat_proxy_parent_class)->finalize (object);
+  G_OBJECT_CLASS (bjs_com_bjs_object_manager_cat_proxy_parent_class)->finalize (object);
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_cat_proxy_get_property (GObject      *object,
+bjs_com_bjs_object_manager_cat_proxy_get_property (GObject      *object,
   guint         prop_id,
   GValue       *value,
   GParamSpec   *pspec G_GNUC_UNUSED)
@@ -1609,7 +1609,7 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_get_property (GObject      *o
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_cat_proxy_set_property (GObject      *object,
+bjs_com_bjs_object_manager_cat_proxy_set_property (GObject      *object,
   guint         prop_id,
   const GValue *value,
   GParamSpec   *pspec G_GNUC_UNUSED)
@@ -1617,7 +1617,7 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_set_property (GObject      *o
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_cat_proxy_g_signal (GDBusProxy *proxy,
+bjs_com_bjs_object_manager_cat_proxy_g_signal (GDBusProxy *proxy,
   const gchar *sender_name G_GNUC_UNUSED,
   const gchar *signal_name,
   GVariant *parameters)
@@ -1629,12 +1629,12 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_g_signal (GDBusProxy *proxy,
   guint num_params;
   guint n;
   guint signal_id;
-  info = (_ExtendedGDBusSignalInfo *) g_dbus_interface_info_lookup_signal ((GDBusInterfaceInfo *) &_bjs_org_gtk_gdbus_example_object_manager_cat_interface_info.parent_struct, signal_name);
+  info = (_ExtendedGDBusSignalInfo *) g_dbus_interface_info_lookup_signal ((GDBusInterfaceInfo *) &_bjs_com_bjs_object_manager_cat_interface_info.parent_struct, signal_name);
   if (info == NULL)
     return;
   num_params = g_variant_n_children (parameters);
   paramv = g_new0 (GValue, num_params + 1);
-  g_value_init (&paramv[0], BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT);
+  g_value_init (&paramv[0], BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT);
   g_value_set_object (&paramv[0], proxy);
   g_variant_iter_init (&iter, parameters);
   n = 1;
@@ -1651,7 +1651,7 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_g_signal (GDBusProxy *proxy,
         g_dbus_gvariant_to_gvalue (child, &paramv[n++]);
       g_variant_unref (child);
     }
-  signal_id = g_signal_lookup (info->signal_name, BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT);
+  signal_id = g_signal_lookup (info->signal_name, BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT);
   g_signal_emitv (paramv, signal_id, 0, NULL);
   for (n = 0; n < num_params + 1; n++)
     g_value_unset (&paramv[n]);
@@ -1659,11 +1659,11 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_g_signal (GDBusProxy *proxy,
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_cat_proxy_g_properties_changed (GDBusProxy *_proxy,
+bjs_com_bjs_object_manager_cat_proxy_g_properties_changed (GDBusProxy *_proxy,
   GVariant *changed_properties,
   const gchar *const *invalidated_properties)
 {
-  BjsOrgGtkGDBusExampleObjectManagerCatProxy *proxy = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT_PROXY (_proxy);
+  BjsComBjsObjectManagerCatProxy *proxy = BJS_COM_BJS_OBJECT_MANAGER_CAT_PROXY (_proxy);
   guint n;
   const gchar *key;
   GVariantIter *iter;
@@ -1671,7 +1671,7 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_g_properties_changed (GDBusPr
   g_variant_get (changed_properties, "a{sv}", &iter);
   while (g_variant_iter_next (iter, "{&sv}", &key, NULL))
     {
-      info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_org_gtk_gdbus_example_object_manager_cat_interface_info.parent_struct, key);
+      info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_com_bjs_object_manager_cat_interface_info.parent_struct, key);
       g_datalist_remove_data (&proxy->priv->qdata, key);
       if (info != NULL)
         g_object_notify (G_OBJECT (proxy), info->hyphen_name);
@@ -1679,7 +1679,7 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_g_properties_changed (GDBusPr
   g_variant_iter_free (iter);
   for (n = 0; invalidated_properties[n] != NULL; n++)
     {
-      info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_org_gtk_gdbus_example_object_manager_cat_interface_info.parent_struct, invalidated_properties[n]);
+      info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_com_bjs_object_manager_cat_interface_info.parent_struct, invalidated_properties[n]);
       g_datalist_remove_data (&proxy->priv->qdata, invalidated_properties[n]);
       if (info != NULL)
         g_object_notify (G_OBJECT (proxy), info->hyphen_name);
@@ -1687,44 +1687,44 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_g_properties_changed (GDBusPr
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_cat_proxy_init (BjsOrgGtkGDBusExampleObjectManagerCatProxy *proxy)
+bjs_com_bjs_object_manager_cat_proxy_init (BjsComBjsObjectManagerCatProxy *proxy)
 {
 #if GLIB_VERSION_MAX_ALLOWED >= GLIB_VERSION_2_38
-  proxy->priv = bjs_org_gtk_gdbus_example_object_manager_cat_proxy_get_instance_private (proxy);
+  proxy->priv = bjs_com_bjs_object_manager_cat_proxy_get_instance_private (proxy);
 #else
-  proxy->priv = G_TYPE_INSTANCE_GET_PRIVATE (proxy, BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT_PROXY, BjsOrgGtkGDBusExampleObjectManagerCatProxyPrivate);
+  proxy->priv = G_TYPE_INSTANCE_GET_PRIVATE (proxy, BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT_PROXY, BjsComBjsObjectManagerCatProxyPrivate);
 #endif
 
-  g_dbus_proxy_set_interface_info (G_DBUS_PROXY (proxy), bjs_org_gtk_gdbus_example_object_manager_cat_interface_info ());
+  g_dbus_proxy_set_interface_info (G_DBUS_PROXY (proxy), bjs_com_bjs_object_manager_cat_interface_info ());
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_cat_proxy_class_init (BjsOrgGtkGDBusExampleObjectManagerCatProxyClass *klass)
+bjs_com_bjs_object_manager_cat_proxy_class_init (BjsComBjsObjectManagerCatProxyClass *klass)
 {
   GObjectClass *gobject_class;
   GDBusProxyClass *proxy_class;
 
   gobject_class = G_OBJECT_CLASS (klass);
-  gobject_class->finalize     = bjs_org_gtk_gdbus_example_object_manager_cat_proxy_finalize;
-  gobject_class->get_property = bjs_org_gtk_gdbus_example_object_manager_cat_proxy_get_property;
-  gobject_class->set_property = bjs_org_gtk_gdbus_example_object_manager_cat_proxy_set_property;
+  gobject_class->finalize     = bjs_com_bjs_object_manager_cat_proxy_finalize;
+  gobject_class->get_property = bjs_com_bjs_object_manager_cat_proxy_get_property;
+  gobject_class->set_property = bjs_com_bjs_object_manager_cat_proxy_set_property;
 
   proxy_class = G_DBUS_PROXY_CLASS (klass);
-  proxy_class->g_signal = bjs_org_gtk_gdbus_example_object_manager_cat_proxy_g_signal;
-  proxy_class->g_properties_changed = bjs_org_gtk_gdbus_example_object_manager_cat_proxy_g_properties_changed;
+  proxy_class->g_signal = bjs_com_bjs_object_manager_cat_proxy_g_signal;
+  proxy_class->g_properties_changed = bjs_com_bjs_object_manager_cat_proxy_g_properties_changed;
 
 #if GLIB_VERSION_MAX_ALLOWED < GLIB_VERSION_2_38
-  g_type_class_add_private (klass, sizeof (BjsOrgGtkGDBusExampleObjectManagerCatProxyPrivate));
+  g_type_class_add_private (klass, sizeof (BjsComBjsObjectManagerCatProxyPrivate));
 #endif
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_cat_proxy_iface_init (BjsOrgGtkGDBusExampleObjectManagerCatIface *iface)
+bjs_com_bjs_object_manager_cat_proxy_iface_init (BjsComBjsObjectManagerCatIface *iface)
 {
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new:
+ * bjs_com_bjs_object_manager_cat_proxy_new:
  * @connection: A #GDBusConnection.
  * @flags: Flags from the #GDBusProxyFlags enumeration.
  * @name: (allow-none): A bus name (well-known or unique) or %NULL if @connection is not a message bus connection.
@@ -1733,15 +1733,15 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_iface_init (BjsOrgGtkGDBusExa
  * @callback: A #GAsyncReadyCallback to call when the request is satisfied.
  * @user_data: User data to pass to @callback.
  *
- * Asynchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Cat.top_of_page">org.gtk.GDBus.Example.ObjectManager.Cat</link>. See g_dbus_proxy_new() for more details.
+ * Asynchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-bjs-ObjectManager-Cat.top_of_page">com.bjs.ObjectManager.Cat</link>. See g_dbus_proxy_new() for more details.
  *
  * When the operation is finished, @callback will be invoked in the <link linkend="g-main-context-push-thread-default">thread-default main loop</link> of the thread you are calling this method from.
- * You can then call bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_finish() to get the result of the operation.
+ * You can then call bjs_com_bjs_object_manager_cat_proxy_new_finish() to get the result of the operation.
  *
- * See bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_sync() for the synchronous, blocking version of this constructor.
+ * See bjs_com_bjs_object_manager_cat_proxy_new_sync() for the synchronous, blocking version of this constructor.
  */
 void
-bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new (
+bjs_com_bjs_object_manager_cat_proxy_new (
     GDBusConnection     *connection,
     GDBusProxyFlags      flags,
     const gchar         *name,
@@ -1750,20 +1750,20 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new (
     GAsyncReadyCallback  callback,
     gpointer             user_data)
 {
-  g_async_initable_new_async (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "org.gtk.GDBus.Example.ObjectManager.Cat", NULL);
+  g_async_initable_new_async (BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "com.bjs.ObjectManager.Cat", NULL);
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_finish:
- * @res: The #GAsyncResult obtained from the #GAsyncReadyCallback passed to bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new().
+ * bjs_com_bjs_object_manager_cat_proxy_new_finish:
+ * @res: The #GAsyncResult obtained from the #GAsyncReadyCallback passed to bjs_com_bjs_object_manager_cat_proxy_new().
  * @error: Return location for error or %NULL
  *
- * Finishes an operation started with bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new().
+ * Finishes an operation started with bjs_com_bjs_object_manager_cat_proxy_new().
  *
- * Returns: (transfer full) (type BjsOrgGtkGDBusExampleObjectManagerCatProxy): The constructed proxy object or %NULL if @error is set.
+ * Returns: (transfer full) (type BjsComBjsObjectManagerCatProxy): The constructed proxy object or %NULL if @error is set.
  */
-BjsOrgGtkGDBusExampleObjectManagerCat *
-bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_finish (
+BjsComBjsObjectManagerCat *
+bjs_com_bjs_object_manager_cat_proxy_new_finish (
     GAsyncResult        *res,
     GError             **error)
 {
@@ -1773,13 +1773,13 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_finish (
   ret = g_async_initable_new_finish (G_ASYNC_INITABLE (source_object), res, error);
   g_object_unref (source_object);
   if (ret != NULL)
-    return BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT (ret);
+    return BJS_COM_BJS_OBJECT_MANAGER_CAT (ret);
   else
     return NULL;
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_sync:
+ * bjs_com_bjs_object_manager_cat_proxy_new_sync:
  * @connection: A #GDBusConnection.
  * @flags: Flags from the #GDBusProxyFlags enumeration.
  * @name: (allow-none): A bus name (well-known or unique) or %NULL if @connection is not a message bus connection.
@@ -1787,16 +1787,16 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_finish (
  * @cancellable: (allow-none): A #GCancellable or %NULL.
  * @error: Return location for error or %NULL
  *
- * Synchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Cat.top_of_page">org.gtk.GDBus.Example.ObjectManager.Cat</link>. See g_dbus_proxy_new_sync() for more details.
+ * Synchronously creates a proxy for the D-Bus interface <link linkend="gdbus-interface-com-bjs-ObjectManager-Cat.top_of_page">com.bjs.ObjectManager.Cat</link>. See g_dbus_proxy_new_sync() for more details.
  *
  * The calling thread is blocked until a reply is received.
  *
- * See bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new() for the asynchronous version of this constructor.
+ * See bjs_com_bjs_object_manager_cat_proxy_new() for the asynchronous version of this constructor.
  *
- * Returns: (transfer full) (type BjsOrgGtkGDBusExampleObjectManagerCatProxy): The constructed proxy object or %NULL if @error is set.
+ * Returns: (transfer full) (type BjsComBjsObjectManagerCatProxy): The constructed proxy object or %NULL if @error is set.
  */
-BjsOrgGtkGDBusExampleObjectManagerCat *
-bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_sync (
+BjsComBjsObjectManagerCat *
+bjs_com_bjs_object_manager_cat_proxy_new_sync (
     GDBusConnection     *connection,
     GDBusProxyFlags      flags,
     const gchar         *name,
@@ -1805,16 +1805,16 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_sync (
     GError             **error)
 {
   GInitable *ret;
-  ret = g_initable_new (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "org.gtk.GDBus.Example.ObjectManager.Cat", NULL);
+  ret = g_initable_new (BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-connection", connection, "g-object-path", object_path, "g-interface-name", "com.bjs.ObjectManager.Cat", NULL);
   if (ret != NULL)
-    return BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT (ret);
+    return BJS_COM_BJS_OBJECT_MANAGER_CAT (ret);
   else
     return NULL;
 }
 
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus:
+ * bjs_com_bjs_object_manager_cat_proxy_new_for_bus:
  * @bus_type: A #GBusType.
  * @flags: Flags from the #GDBusProxyFlags enumeration.
  * @name: A bus name (well-known or unique).
@@ -1823,15 +1823,15 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_sync (
  * @callback: A #GAsyncReadyCallback to call when the request is satisfied.
  * @user_data: User data to pass to @callback.
  *
- * Like bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new() but takes a #GBusType instead of a #GDBusConnection.
+ * Like bjs_com_bjs_object_manager_cat_proxy_new() but takes a #GBusType instead of a #GDBusConnection.
  *
  * When the operation is finished, @callback will be invoked in the <link linkend="g-main-context-push-thread-default">thread-default main loop</link> of the thread you are calling this method from.
- * You can then call bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus_finish() to get the result of the operation.
+ * You can then call bjs_com_bjs_object_manager_cat_proxy_new_for_bus_finish() to get the result of the operation.
  *
- * See bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus_sync() for the synchronous, blocking version of this constructor.
+ * See bjs_com_bjs_object_manager_cat_proxy_new_for_bus_sync() for the synchronous, blocking version of this constructor.
  */
 void
-bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus (
+bjs_com_bjs_object_manager_cat_proxy_new_for_bus (
     GBusType             bus_type,
     GDBusProxyFlags      flags,
     const gchar         *name,
@@ -1840,20 +1840,20 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus (
     GAsyncReadyCallback  callback,
     gpointer             user_data)
 {
-  g_async_initable_new_async (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "org.gtk.GDBus.Example.ObjectManager.Cat", NULL);
+  g_async_initable_new_async (BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT_PROXY, G_PRIORITY_DEFAULT, cancellable, callback, user_data, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "com.bjs.ObjectManager.Cat", NULL);
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus_finish:
- * @res: The #GAsyncResult obtained from the #GAsyncReadyCallback passed to bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus().
+ * bjs_com_bjs_object_manager_cat_proxy_new_for_bus_finish:
+ * @res: The #GAsyncResult obtained from the #GAsyncReadyCallback passed to bjs_com_bjs_object_manager_cat_proxy_new_for_bus().
  * @error: Return location for error or %NULL
  *
- * Finishes an operation started with bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus().
+ * Finishes an operation started with bjs_com_bjs_object_manager_cat_proxy_new_for_bus().
  *
- * Returns: (transfer full) (type BjsOrgGtkGDBusExampleObjectManagerCatProxy): The constructed proxy object or %NULL if @error is set.
+ * Returns: (transfer full) (type BjsComBjsObjectManagerCatProxy): The constructed proxy object or %NULL if @error is set.
  */
-BjsOrgGtkGDBusExampleObjectManagerCat *
-bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus_finish (
+BjsComBjsObjectManagerCat *
+bjs_com_bjs_object_manager_cat_proxy_new_for_bus_finish (
     GAsyncResult        *res,
     GError             **error)
 {
@@ -1863,13 +1863,13 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus_finish (
   ret = g_async_initable_new_finish (G_ASYNC_INITABLE (source_object), res, error);
   g_object_unref (source_object);
   if (ret != NULL)
-    return BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT (ret);
+    return BJS_COM_BJS_OBJECT_MANAGER_CAT (ret);
   else
     return NULL;
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus_sync:
+ * bjs_com_bjs_object_manager_cat_proxy_new_for_bus_sync:
  * @bus_type: A #GBusType.
  * @flags: Flags from the #GDBusProxyFlags enumeration.
  * @name: A bus name (well-known or unique).
@@ -1877,16 +1877,16 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus_finish (
  * @cancellable: (allow-none): A #GCancellable or %NULL.
  * @error: Return location for error or %NULL
  *
- * Like bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_sync() but takes a #GBusType instead of a #GDBusConnection.
+ * Like bjs_com_bjs_object_manager_cat_proxy_new_sync() but takes a #GBusType instead of a #GDBusConnection.
  *
  * The calling thread is blocked until a reply is received.
  *
- * See bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus() for the asynchronous version of this constructor.
+ * See bjs_com_bjs_object_manager_cat_proxy_new_for_bus() for the asynchronous version of this constructor.
  *
- * Returns: (transfer full) (type BjsOrgGtkGDBusExampleObjectManagerCatProxy): The constructed proxy object or %NULL if @error is set.
+ * Returns: (transfer full) (type BjsComBjsObjectManagerCatProxy): The constructed proxy object or %NULL if @error is set.
  */
-BjsOrgGtkGDBusExampleObjectManagerCat *
-bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus_sync (
+BjsComBjsObjectManagerCat *
+bjs_com_bjs_object_manager_cat_proxy_new_for_bus_sync (
     GBusType             bus_type,
     GDBusProxyFlags      flags,
     const gchar         *name,
@@ -1895,9 +1895,9 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus_sync (
     GError             **error)
 {
   GInitable *ret;
-  ret = g_initable_new (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "org.gtk.GDBus.Example.ObjectManager.Cat", NULL);
+  ret = g_initable_new (BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT_PROXY, cancellable, error, "g-flags", flags, "g-name", name, "g-bus-type", bus_type, "g-object-path", object_path, "g-interface-name", "com.bjs.ObjectManager.Cat", NULL);
   if (ret != NULL)
-    return BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT (ret);
+    return BJS_COM_BJS_OBJECT_MANAGER_CAT (ret);
   else
     return NULL;
 }
@@ -1906,19 +1906,19 @@ bjs_org_gtk_gdbus_example_object_manager_cat_proxy_new_for_bus_sync (
 /* ------------------------------------------------------------------------ */
 
 /**
- * BjsOrgGtkGDBusExampleObjectManagerCatSkeleton:
+ * BjsComBjsObjectManagerCatSkeleton:
  *
- * The #BjsOrgGtkGDBusExampleObjectManagerCatSkeleton structure contains only private data and should only be accessed using the provided API.
+ * The #BjsComBjsObjectManagerCatSkeleton structure contains only private data and should only be accessed using the provided API.
  */
 
 /**
- * BjsOrgGtkGDBusExampleObjectManagerCatSkeletonClass:
+ * BjsComBjsObjectManagerCatSkeletonClass:
  * @parent_class: The parent class.
  *
- * Class structure for #BjsOrgGtkGDBusExampleObjectManagerCatSkeleton.
+ * Class structure for #BjsComBjsObjectManagerCatSkeleton.
  */
 
-struct _BjsOrgGtkGDBusExampleObjectManagerCatSkeletonPrivate
+struct _BjsComBjsObjectManagerCatSkeletonPrivate
 {
   GValue *properties;
   GList *changed_properties;
@@ -1928,7 +1928,7 @@ struct _BjsOrgGtkGDBusExampleObjectManagerCatSkeletonPrivate
 };
 
 static void
-_bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_method_call (
+_bjs_com_bjs_object_manager_cat_skeleton_handle_method_call (
   GDBusConnection *connection G_GNUC_UNUSED,
   const gchar *sender G_GNUC_UNUSED,
   const gchar *object_path G_GNUC_UNUSED,
@@ -1938,7 +1938,7 @@ _bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_method_call (
   GDBusMethodInvocation *invocation,
   gpointer user_data)
 {
-  BjsOrgGtkGDBusExampleObjectManagerCatSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT_SKELETON (user_data);
+  BjsComBjsObjectManagerCatSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_CAT_SKELETON (user_data);
   _ExtendedGDBusMethodInfo *info;
   GVariantIter iter;
   GVariant *child;
@@ -1953,7 +1953,7 @@ _bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_method_call (
   num_params = g_variant_n_children (parameters);
   num_extra = info->pass_fdlist ? 3 : 2;  paramv = g_new0 (GValue, num_params + num_extra);
   n = 0;
-  g_value_init (&paramv[n], BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT);
+  g_value_init (&paramv[n], BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT);
   g_value_set_object (&paramv[n++], skeleton);
   g_value_init (&paramv[n], G_TYPE_DBUS_METHOD_INVOCATION);
   g_value_set_object (&paramv[n++], invocation);
@@ -1980,7 +1980,7 @@ _bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_method_call (
         g_dbus_gvariant_to_gvalue (child, &paramv[n++]);
       g_variant_unref (child);
     }
-  signal_id = g_signal_lookup (info->signal_name, BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT);
+  signal_id = g_signal_lookup (info->signal_name, BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT);
   g_value_init (&return_value, G_TYPE_BOOLEAN);
   g_signal_emitv (paramv, signal_id, 0, &return_value);
   if (!g_value_get_boolean (&return_value))
@@ -1992,7 +1992,7 @@ _bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_method_call (
 }
 
 static GVariant *
-_bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_get_property (
+_bjs_com_bjs_object_manager_cat_skeleton_handle_get_property (
   GDBusConnection *connection G_GNUC_UNUSED,
   const gchar *sender G_GNUC_UNUSED,
   const gchar *object_path G_GNUC_UNUSED,
@@ -2001,13 +2001,13 @@ _bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_get_property (
   GError **error,
   gpointer user_data)
 {
-  BjsOrgGtkGDBusExampleObjectManagerCatSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT_SKELETON (user_data);
+  BjsComBjsObjectManagerCatSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_CAT_SKELETON (user_data);
   GValue value = G_VALUE_INIT;
   GParamSpec *pspec;
   _ExtendedGDBusPropertyInfo *info;
   GVariant *ret;
   ret = NULL;
-  info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_org_gtk_gdbus_example_object_manager_cat_interface_info.parent_struct, property_name);
+  info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_com_bjs_object_manager_cat_interface_info.parent_struct, property_name);
   g_assert (info != NULL);
   pspec = g_object_class_find_property (G_OBJECT_GET_CLASS (skeleton), info->hyphen_name);
   if (pspec == NULL)
@@ -2025,7 +2025,7 @@ _bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_get_property (
 }
 
 static gboolean
-_bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_set_property (
+_bjs_com_bjs_object_manager_cat_skeleton_handle_set_property (
   GDBusConnection *connection G_GNUC_UNUSED,
   const gchar *sender G_GNUC_UNUSED,
   const gchar *object_path G_GNUC_UNUSED,
@@ -2035,13 +2035,13 @@ _bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_set_property (
   GError **error,
   gpointer user_data)
 {
-  BjsOrgGtkGDBusExampleObjectManagerCatSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT_SKELETON (user_data);
+  BjsComBjsObjectManagerCatSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_CAT_SKELETON (user_data);
   GValue value = G_VALUE_INIT;
   GParamSpec *pspec;
   _ExtendedGDBusPropertyInfo *info;
   gboolean ret;
   ret = FALSE;
-  info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_org_gtk_gdbus_example_object_manager_cat_interface_info.parent_struct, property_name);
+  info = (_ExtendedGDBusPropertyInfo *) g_dbus_interface_info_lookup_property ((GDBusInterfaceInfo *) &_bjs_com_bjs_object_manager_cat_interface_info.parent_struct, property_name);
   g_assert (info != NULL);
   pspec = g_object_class_find_property (G_OBJECT_GET_CLASS (skeleton), info->hyphen_name);
   if (pspec == NULL)
@@ -2061,43 +2061,43 @@ _bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_set_property (
   return ret;
 }
 
-static const GDBusInterfaceVTable _bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_vtable =
+static const GDBusInterfaceVTable _bjs_com_bjs_object_manager_cat_skeleton_vtable =
 {
-  _bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_method_call,
-  _bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_get_property,
-  _bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_set_property,
+  _bjs_com_bjs_object_manager_cat_skeleton_handle_method_call,
+  _bjs_com_bjs_object_manager_cat_skeleton_handle_get_property,
+  _bjs_com_bjs_object_manager_cat_skeleton_handle_set_property,
   {NULL}
 };
 
 static GDBusInterfaceInfo *
-bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_dbus_interface_get_info (GDBusInterfaceSkeleton *skeleton G_GNUC_UNUSED)
+bjs_com_bjs_object_manager_cat_skeleton_dbus_interface_get_info (GDBusInterfaceSkeleton *skeleton G_GNUC_UNUSED)
 {
-  return bjs_org_gtk_gdbus_example_object_manager_cat_interface_info ();
+  return bjs_com_bjs_object_manager_cat_interface_info ();
 }
 
 static GDBusInterfaceVTable *
-bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_dbus_interface_get_vtable (GDBusInterfaceSkeleton *skeleton G_GNUC_UNUSED)
+bjs_com_bjs_object_manager_cat_skeleton_dbus_interface_get_vtable (GDBusInterfaceSkeleton *skeleton G_GNUC_UNUSED)
 {
-  return (GDBusInterfaceVTable *) &_bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_vtable;
+  return (GDBusInterfaceVTable *) &_bjs_com_bjs_object_manager_cat_skeleton_vtable;
 }
 
 static GVariant *
-bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_dbus_interface_get_properties (GDBusInterfaceSkeleton *_skeleton)
+bjs_com_bjs_object_manager_cat_skeleton_dbus_interface_get_properties (GDBusInterfaceSkeleton *_skeleton)
 {
-  BjsOrgGtkGDBusExampleObjectManagerCatSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT_SKELETON (_skeleton);
+  BjsComBjsObjectManagerCatSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_CAT_SKELETON (_skeleton);
 
   GVariantBuilder builder;
   guint n;
   g_variant_builder_init (&builder, G_VARIANT_TYPE ("a{sv}"));
-  if (_bjs_org_gtk_gdbus_example_object_manager_cat_interface_info.parent_struct.properties == NULL)
+  if (_bjs_com_bjs_object_manager_cat_interface_info.parent_struct.properties == NULL)
     goto out;
-  for (n = 0; _bjs_org_gtk_gdbus_example_object_manager_cat_interface_info.parent_struct.properties[n] != NULL; n++)
+  for (n = 0; _bjs_com_bjs_object_manager_cat_interface_info.parent_struct.properties[n] != NULL; n++)
     {
-      GDBusPropertyInfo *info = _bjs_org_gtk_gdbus_example_object_manager_cat_interface_info.parent_struct.properties[n];
+      GDBusPropertyInfo *info = _bjs_com_bjs_object_manager_cat_interface_info.parent_struct.properties[n];
       if (info->flags & G_DBUS_PROPERTY_INFO_FLAGS_READABLE)
         {
           GVariant *value;
-          value = _bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_handle_get_property (g_dbus_interface_skeleton_get_connection (G_DBUS_INTERFACE_SKELETON (skeleton)), NULL, g_dbus_interface_skeleton_get_object_path (G_DBUS_INTERFACE_SKELETON (skeleton)), "org.gtk.GDBus.Example.ObjectManager.Cat", info->name, NULL, skeleton);
+          value = _bjs_com_bjs_object_manager_cat_skeleton_handle_get_property (g_dbus_interface_skeleton_get_connection (G_DBUS_INTERFACE_SKELETON (skeleton)), NULL, g_dbus_interface_skeleton_get_object_path (G_DBUS_INTERFACE_SKELETON (skeleton)), "com.bjs.ObjectManager.Cat", info->name, NULL, skeleton);
           if (value != NULL)
             {
               g_variant_take_ref (value);
@@ -2111,40 +2111,40 @@ out:
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_dbus_interface_flush (GDBusInterfaceSkeleton *_skeleton)
+bjs_com_bjs_object_manager_cat_skeleton_dbus_interface_flush (GDBusInterfaceSkeleton *_skeleton)
 {
 }
 
-static void bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_iface_init (BjsOrgGtkGDBusExampleObjectManagerCatIface *iface);
+static void bjs_com_bjs_object_manager_cat_skeleton_iface_init (BjsComBjsObjectManagerCatIface *iface);
 #if GLIB_VERSION_MAX_ALLOWED >= GLIB_VERSION_2_38
-G_DEFINE_TYPE_WITH_CODE (BjsOrgGtkGDBusExampleObjectManagerCatSkeleton, bjs_org_gtk_gdbus_example_object_manager_cat_skeleton, G_TYPE_DBUS_INTERFACE_SKELETON,
-                         G_ADD_PRIVATE (BjsOrgGtkGDBusExampleObjectManagerCatSkeleton)
-                         G_IMPLEMENT_INTERFACE (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT, bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_iface_init));
+G_DEFINE_TYPE_WITH_CODE (BjsComBjsObjectManagerCatSkeleton, bjs_com_bjs_object_manager_cat_skeleton, G_TYPE_DBUS_INTERFACE_SKELETON,
+                         G_ADD_PRIVATE (BjsComBjsObjectManagerCatSkeleton)
+                         G_IMPLEMENT_INTERFACE (BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT, bjs_com_bjs_object_manager_cat_skeleton_iface_init));
 
 #else
-G_DEFINE_TYPE_WITH_CODE (BjsOrgGtkGDBusExampleObjectManagerCatSkeleton, bjs_org_gtk_gdbus_example_object_manager_cat_skeleton, G_TYPE_DBUS_INTERFACE_SKELETON,
-                         G_IMPLEMENT_INTERFACE (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT, bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_iface_init));
+G_DEFINE_TYPE_WITH_CODE (BjsComBjsObjectManagerCatSkeleton, bjs_com_bjs_object_manager_cat_skeleton, G_TYPE_DBUS_INTERFACE_SKELETON,
+                         G_IMPLEMENT_INTERFACE (BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT, bjs_com_bjs_object_manager_cat_skeleton_iface_init));
 
 #endif
 static void
-bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_finalize (GObject *object)
+bjs_com_bjs_object_manager_cat_skeleton_finalize (GObject *object)
 {
-  BjsOrgGtkGDBusExampleObjectManagerCatSkeleton *skeleton = BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT_SKELETON (object);
+  BjsComBjsObjectManagerCatSkeleton *skeleton = BJS_COM_BJS_OBJECT_MANAGER_CAT_SKELETON (object);
   g_list_free_full (skeleton->priv->changed_properties, (GDestroyNotify) _changed_property_free);
   if (skeleton->priv->changed_properties_idle_source != NULL)
     g_source_destroy (skeleton->priv->changed_properties_idle_source);
   g_main_context_unref (skeleton->priv->context);
   g_mutex_clear (&skeleton->priv->lock);
-  G_OBJECT_CLASS (bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_parent_class)->finalize (object);
+  G_OBJECT_CLASS (bjs_com_bjs_object_manager_cat_skeleton_parent_class)->finalize (object);
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_init (BjsOrgGtkGDBusExampleObjectManagerCatSkeleton *skeleton)
+bjs_com_bjs_object_manager_cat_skeleton_init (BjsComBjsObjectManagerCatSkeleton *skeleton)
 {
 #if GLIB_VERSION_MAX_ALLOWED >= GLIB_VERSION_2_38
-  skeleton->priv = bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_get_instance_private (skeleton);
+  skeleton->priv = bjs_com_bjs_object_manager_cat_skeleton_get_instance_private (skeleton);
 #else
-  skeleton->priv = G_TYPE_INSTANCE_GET_PRIVATE (skeleton, BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT_SKELETON, BjsOrgGtkGDBusExampleObjectManagerCatSkeletonPrivate);
+  skeleton->priv = G_TYPE_INSTANCE_GET_PRIVATE (skeleton, BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT_SKELETON, BjsComBjsObjectManagerCatSkeletonPrivate);
 #endif
 
   g_mutex_init (&skeleton->priv->lock);
@@ -2152,40 +2152,40 @@ bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_init (BjsOrgGtkGDBusExampl
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_class_init (BjsOrgGtkGDBusExampleObjectManagerCatSkeletonClass *klass)
+bjs_com_bjs_object_manager_cat_skeleton_class_init (BjsComBjsObjectManagerCatSkeletonClass *klass)
 {
   GObjectClass *gobject_class;
   GDBusInterfaceSkeletonClass *skeleton_class;
 
   gobject_class = G_OBJECT_CLASS (klass);
-  gobject_class->finalize = bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_finalize;
+  gobject_class->finalize = bjs_com_bjs_object_manager_cat_skeleton_finalize;
 
   skeleton_class = G_DBUS_INTERFACE_SKELETON_CLASS (klass);
-  skeleton_class->get_info = bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_dbus_interface_get_info;
-  skeleton_class->get_properties = bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_dbus_interface_get_properties;
-  skeleton_class->flush = bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_dbus_interface_flush;
-  skeleton_class->get_vtable = bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_dbus_interface_get_vtable;
+  skeleton_class->get_info = bjs_com_bjs_object_manager_cat_skeleton_dbus_interface_get_info;
+  skeleton_class->get_properties = bjs_com_bjs_object_manager_cat_skeleton_dbus_interface_get_properties;
+  skeleton_class->flush = bjs_com_bjs_object_manager_cat_skeleton_dbus_interface_flush;
+  skeleton_class->get_vtable = bjs_com_bjs_object_manager_cat_skeleton_dbus_interface_get_vtable;
 
 #if GLIB_VERSION_MAX_ALLOWED < GLIB_VERSION_2_38
-  g_type_class_add_private (klass, sizeof (BjsOrgGtkGDBusExampleObjectManagerCatSkeletonPrivate));
+  g_type_class_add_private (klass, sizeof (BjsComBjsObjectManagerCatSkeletonPrivate));
 #endif
 }
 
 static void
-bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_iface_init (BjsOrgGtkGDBusExampleObjectManagerCatIface *iface)
+bjs_com_bjs_object_manager_cat_skeleton_iface_init (BjsComBjsObjectManagerCatIface *iface)
 {
 }
 
 /**
- * bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_new:
+ * bjs_com_bjs_object_manager_cat_skeleton_new:
  *
- * Creates a skeleton object for the D-Bus interface <link linkend="gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Cat.top_of_page">org.gtk.GDBus.Example.ObjectManager.Cat</link>.
+ * Creates a skeleton object for the D-Bus interface <link linkend="gdbus-interface-com-bjs-ObjectManager-Cat.top_of_page">com.bjs.ObjectManager.Cat</link>.
  *
- * Returns: (transfer full) (type BjsOrgGtkGDBusExampleObjectManagerCatSkeleton): The skeleton object.
+ * Returns: (transfer full) (type BjsComBjsObjectManagerCatSkeleton): The skeleton object.
  */
-BjsOrgGtkGDBusExampleObjectManagerCat *
-bjs_org_gtk_gdbus_example_object_manager_cat_skeleton_new (void)
+BjsComBjsObjectManagerCat *
+bjs_com_bjs_object_manager_cat_skeleton_new (void)
 {
-  return BJS_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT (g_object_new (BJS_TYPE_ORG_GTK_GDBUS_EXAMPLE_OBJECT_MANAGER_CAT_SKELETON, NULL));
+  return BJS_COM_BJS_OBJECT_MANAGER_CAT (g_object_new (BJS_TYPE_COM_BJS_OBJECT_MANAGER_CAT_SKELETON, NULL));
 }
 
