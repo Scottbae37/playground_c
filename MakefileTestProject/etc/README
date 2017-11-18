@@ -1,0 +1,2 @@
+This folder is for configuration files, script files and etc.
+~$ cmake -G"Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Release -D CMAKE_ECLIPSE_VERSION=4.2 ./CMakeLists.txt
