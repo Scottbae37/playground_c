@@ -1,12 +1,3 @@
-/******************************************************************************
- *   Autonomous Vehicle Technology Lab, LG ELECTRONICS INC., SEOUL, KOREA
- *   Copyright(c) 2017 by LG Electronics Inc.
- *
- *   All rights reserved. No part of this work may be reproduced, stored in a
- *   retrieval system, or transmitted by any means without prior written
- *   Permission of LG Electronics Inc.
- *****************************************************************************/
-
 #include <stdio.h>
 #include "example_tcMain.h"
 #include "example_algorithm1.h"
