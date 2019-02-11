@@ -1,0 +1,1 @@
+add_executable(algo_main main.cpp)
