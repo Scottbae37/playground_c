@@ -21,10 +21,13 @@ protected:
 };
 
 void insertionSolve(int *arr, int size) {
-  for (int i = 0; i < size - 1; ++i)
-    for (int j = i; j + 1; --j)
-      if (arr[j] > arr[j + 1])
-        swap(arr[j], arr[j + 1]);
+  for (int i = 1; i < size; ++i) {
+    int j = i - 1;
+    while ((arr[j] > arr[j + 1]) && (j >= 0)) {
+      swap(arr[j], arr[j + 1]);
+      j--;
+    }
+  }
 }
 
 void bubleSolve(int *arr, int size) {
@@ -39,8 +42,32 @@ TEST_F(InsertionBubbleSort_Test, insertionSolve) {
   ASSERT_THAT(array, ElementsAreArray(sortedArr));
 }
 
+void insertionSolve2(int *arr, int size) {
+  for (int i = 0; i < size - 1; ++i)
+    for (int j = i + 1; j < size; ++j)
+      if (arr[i] > arr[j])
+        swap(arr[i], arr[j]);
+}
+
+TEST_F(InsertionBubbleSort_Test, insertionSolve2) {
+  insertionSolve2(array, 17);
+  ASSERT_THAT(array, ElementsAreArray(sortedArr));
+}
+
 TEST_F(InsertionBubbleSort_Test, solve2) {
   bubleSolve(array, 17);
+  ASSERT_THAT(array, ElementsAreArray(sortedArr));
+}
+
+void bubleSolve2(int *arr, int size) {
+  for (int i = 0; i < size - 1; ++i)
+    for (int j = 0; j < size - 1 - i; ++j)
+      if (arr[j] > arr[j + 1])
+        swap(arr[j], arr[j + 1]);
+}
+
+TEST_F(InsertionBubbleSort_Test, solve3) {
+  bubleSolve2(array, 17);
   ASSERT_THAT(array, ElementsAreArray(sortedArr));
 }
 
