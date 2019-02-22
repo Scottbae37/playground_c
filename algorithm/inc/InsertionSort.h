@@ -1,13 +1,13 @@
 #ifndef PLAYGROUND_INSERTIONSORT_H
 #define PLAYGROUND_INSERTIONSORT_H
 
+#include <ISort.h>
 
-class InsertionSort {
-private:
-    void swap(int *arr, int i, int j) const;
+class InsertionSort : public ISort {
 public:
-    void sort(int *arr, int size);
-    void sort3(int *arr, int size);
+		void sort(int *arr, int size) override;
+
+		virtual ~InsertionSort() {};
 };
 
 
