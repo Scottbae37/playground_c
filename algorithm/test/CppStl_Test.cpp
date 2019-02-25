@@ -78,9 +78,9 @@ TEST_F(CppStl_Test, stl_queue) {
 	q.push(3);
 	while (!q.empty()) {
 		int val = q.front();
+		q.pop();
 		actual.push_back(val);
 		cout << val << ", ";
-		q.pop();
 	}
 	cout << endl;
 
@@ -101,9 +101,9 @@ TEST_F(CppStl_Test, stl_stack) {
 	st.push(3);
 	while (!st.empty()) {
 		int val = st.top();
+		st.pop();
 		actual.push_back(val);
 		cout << val << ", ";
-		st.pop();
 	}
 	cout << endl;
 

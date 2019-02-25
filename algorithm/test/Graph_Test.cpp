@@ -10,8 +10,6 @@ using namespace testing;
 
 class GraphTest : public ::testing::Test {
 
-private:
-		static const string privatStr;
 public:
 		static void addEdge(vector<int> *v, int a, int b) {
 			v[a].push_back(b);
@@ -19,7 +17,8 @@ public:
 		}
 
 
-		static const int EXPECTED[];
+		static const int EXPECTED_BFS[];
+		static const int EXPECTED_DFS[];
 		static const int val = 2;
 		static const double nonIntegerType;
 		static const int valInitOutOfCalss;
@@ -34,16 +33,13 @@ protected:
 
 		}
 };
-
-const int GraphTest::EXPECTED[] = {0, 1, 2, 5, 6, 3, 4, 7, 8};
-const double GraphTest::nonIntegerType = 3.14;
-const std::string GraphTest::privatStr = "Are you OK?";
-const int GraphTest::valInitOutOfCalss = 10;
+const int GraphTest::EXPECTED_BFS[] = {0, 1, 2, 5, 6, 3, 4, 7, 8};
+const int GraphTest::EXPECTED_DFS[] = {0, 1, 2, 3, 4, 7, 8, 5, 6};
 
 
-TEST(BFS_Test, Bfs_Test) {
+TEST_F(GraphTest, bfs) {
 	/**
-	 *  Init: Enqueue root
+	 *  Init: Enqueue root and Visit
 	 *
 	 *  While Queue is not empty
  	 *  Dequeue
@@ -98,6 +94,53 @@ TEST(BFS_Test, Bfs_Test) {
 	}
 
 	/** Assertion */
-	ASSERT_THAT(actual, ElementsAreArray(GraphTest::EXPECTED));
+	ASSERT_THAT(actual, ElementsAreArray(GraphTest::EXPECTED_BFS));
+	cout << endl;
+}
+
+TEST_F(GraphTest, dfs) {
+	/**
+	 *  Init: Push root
+	 *
+	 *  While stack is not empty
+ 	 *  If not visited
+ 	 *  Visit
+ 	 *  Enqueue
+	 */
+
+	/** Arrange */
+	vector<int> actual;
+	const int N = 9;
+	cout << endl;
+	bool visited[N] = {false};
+	vector<int> v[N];
+	GraphTest::addEdge(v, 0, 1), GraphTest::addEdge(v, 0, 2);
+	GraphTest::addEdge(v, 1, 5), GraphTest::addEdge(v, 1, 6), GraphTest::addEdge(v, 2, 3);
+	GraphTest::addEdge(v, 3, 4), GraphTest::addEdge(v, 3, 7);
+	GraphTest::addEdge(v, 7, 8);
+
+	/** Action */
+	// TODO: DFS
+	stack<int> st;
+	st.push(0);
+	visited[0] = true;
+	cout << 0 << ", ";
+	actual.push_back(0);
+
+	while (!st.empty()) {
+		int val = st.top();
+		st.pop();
+		for (vector<int>::iterator it = v[val].begin(); it < v[val].end(); it++) {
+			if (!visited[*it]) {
+				st.push(*it);
+				visited[*it] = true;
+				cout << *it << ", ";
+				actual.push_back(*it);
+			}
+		}
+	}
+
+	/** Assertion */
+	ASSERT_THAT(actual, ElementsAreArray(GraphTest::EXPECTED_DFS));
 	cout << endl;
 }
