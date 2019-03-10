@@ -5,6 +5,7 @@
 #include <queue>
 #include <stack>
 #include <string>
+#include <map>
 
 using namespace std;
 using namespace testing;
@@ -35,7 +36,10 @@ TEST_F(CppStl_Test, stl_swap) {
   vector<int> arr;
   arr.push_back(1);
   arr.push_back(2);
-
+  arr.push_back(3);
+  vector<int> temp(arr.begin()+0, arr.begin()+2);
+  for(auto it = temp.begin(); it != temp.end(); it++)
+    cout<< "=== " << *it <<" ===" <<endl;
   /** Action */
   swap(arr[0], arr[1]);
 
@@ -117,7 +121,23 @@ bool pairComp(pair<string, int> a, pair<string, int> b) {
   return a.second < b.second;
 }
 
+struct st{
+    int X, ID;//위치, 아이디
+    st(){}
+    st(int a, int b): X(a), ID(b){}
+};
+
+typedef struct myStruct{
+    int a;
+    int b;
+    myStruct(int aa, int bb):a(aa), b(bb){}
+}MyType_t;
+
 TEST_F(CppStl_Test, pair_sort) {
+  vector<struct st> vv;
+  vv.push_back(st(1, 2));
+  vector<MyType_t> v;
+  v.push_back(MyType_t(10, 20));
   vector<pair<string, int>> vec;
   vec.push_back(pair<string, int>("Smith", 90));
   vec.push_back(pair<string, int>("Jhon", 89));
@@ -125,6 +145,8 @@ TEST_F(CppStl_Test, pair_sort) {
   vec.push_back(pair<string, int>("Lee", 100));
   vec.push_back(pair<string, int>("B", 88));
   vec.push_back(pair<string, int>("A", 88));
+  vec.push_back(pair<string, int>("A", 88));
+  vec.erase(unique(vec.begin(), vec.end()), vec.end());
   sort(vec.begin(), vec.end(), pairComp);
   for (vector<pair<string, int>>::iterator it = vec.begin(); it < vec.end(); it++) {
     string name = it->first;
@@ -138,5 +160,39 @@ TEST_F(CppStl_Test, pair_sort) {
    * name : Smith Score: 90
    * name : Kim Score: 94
    * name : Lee Score: 100
+   */
+}
+
+TEST_F(CppStl_Test, map_test) {
+  /** insert() */
+  map<int, int> m;
+  m.insert(make_pair(1, 2));
+  m.insert(make_pair(1, 2));
+  m.insert(make_pair(2, 2));
+  m[3] = 4; /** Possible */
+  ASSERT_EQ(1, m.count(1));
+  ASSERT_EQ(3, m.size());
+
+  /** find() */
+  int key = m.find(1)->first;
+  int value = m.find(1)->second;
+  cout << endl << key << ": " << value << endl;
+
+  /** Not found */
+  auto it = m.find(0);
+  if (it == m.end())
+    cout << "no key found with 0" << endl;
+
+  /** iteration: auto it is also possible */
+  for (map<int, int>::iterator it = m.begin(); it != m.end(); it++) {
+    cout << "key : " << it->first << " " << "value : " << it->second << '\n';
+  }
+  /**
+   * Output
+   *  1: 2
+   *  no key found with 0
+   *  key : 1 value : 2
+   *  key : 2 value : 2
+   *  key : 3 value : 4
    */
 }
