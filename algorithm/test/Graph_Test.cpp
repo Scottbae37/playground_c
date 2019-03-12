@@ -11,136 +11,133 @@ using namespace testing;
 class GraphTest : public ::testing::Test {
 
 public:
-		static void addEdge(vector<int> *v, int a, int b) {
-			v[a].push_back(b);
-			v[b].push_back(a);
-		}
+    static void addEdge(vector<int> *v, int a, int b) {
+      v[a].push_back(b);
+      v[b].push_back(a);
+    }
 
 
-		static const int EXPECTED_BFS[];
-		static const int EXPECTED_DFS[];
-		static const int val = 2;
-		static const double nonIntegerType;
-		static const int valInitOutOfCalss;
+    static const int EXPECTED_BFS[];
+    static const int EXPECTED_DFS[];
+    static const int val = 2;
+    static const double nonIntegerType;
+    static const int valInitOutOfCalss;
 
 protected:
 
-		virtual void SetUp() {
+    virtual void SetUp() {
 
-		}
+    }
 
-		virtual void TearDown() {
+    virtual void TearDown() {
 
-		}
+    }
 };
+
 const int GraphTest::EXPECTED_BFS[] = {0, 1, 2, 5, 6, 3, 4, 7, 8};
 const int GraphTest::EXPECTED_DFS[] = {0, 1, 2, 3, 4, 7, 8, 5, 6};
 
 
 TEST_F(GraphTest, bfs) {
-	/**
-	 *  Init: Enqueue root and Visit
-	 *
-	 *  While Queue is not empty
- 	 *  Dequeue
- 	 *  If not visited
- 	 *  Visit
- 	 *  Enqueue
-	 */
+  /**
+   *  Init: Enqueue root and Visit
+   *
+   *  While Queue is not empty
+   *  Visit, and push child that has not visited
+   */
 
-	/** Arrange */
-	vector<int> actual;
-	const int N = 9;
-	cout << endl;
-	bool visited[N] = {false};
-	vector<int> v[N];
-	/**
-	 *         0
-	 *       /  \
-	 *      /    \
-	 *     1 		 2
-	 *    / \   /
-	 *   5  6   3
-	 *        /  \
-	 *       4   7
-	 *          /
-	 *         8
-	 * */
-	GraphTest::addEdge(v, 0, 1), GraphTest::addEdge(v, 0, 2);
-	GraphTest::addEdge(v, 1, 5), GraphTest::addEdge(v, 1, 6), GraphTest::addEdge(v, 2, 3);
-	GraphTest::addEdge(v, 3, 4), GraphTest::addEdge(v, 3, 7);
-	GraphTest::addEdge(v, 7, 8);
+  /** Arrange */
+  vector<int> actual;
+  const int N = 9;
+  cout << endl;
+  bool visited[N] = {false};
+  vector<int> v[N];
+  /**
+   *         0
+   *       /  \
+   *      /    \
+   *     1 		 2
+   *    / \   /
+   *   5  6   3
+   *        /  \
+   *       4   7
+   *          /
+   *         8
+   * */
+  GraphTest::addEdge(v, 0, 1), GraphTest::addEdge(v, 0, 2);
+  GraphTest::addEdge(v, 1, 5), GraphTest::addEdge(v, 1, 6), GraphTest::addEdge(v, 2, 3);
+  GraphTest::addEdge(v, 3, 4), GraphTest::addEdge(v, 3, 7);
+  GraphTest::addEdge(v, 7, 8);
 
-	/** Action */
-	// TODO: BFS
-	queue<int> q;
-	q.push(0);
-	visited[0] = true;
+  /** Action */
+  // TODO: BFS
+  queue<int> q;
+  visited[0] = true;
+  q.push(0);
+  actual.push_back(0);
+  while (!q.empty()) {
+    int val = q.front();
+    cout << val << ", ";
+    q.pop();
+    for (auto it = v[val].begin(); it < v[val].end(); it++) {
+      int node = *it;
+      if (!visited[node]) {
+        visited[node] = true;
+        q.push(node);
+        actual.push_back(node);
+      }
+    }
+  }
 
-	while (!q.empty()) {
-		int parent = q.front();
-		q.pop();
-		actual.push_back(parent);
-		cout << parent << " ";
-//	for (int i = 0; i < v[parent].size(); i++) {
-//		int child = v[parent][i];
-		for (vector<int>::iterator it = v[parent].begin(); it != v[parent].end(); it++) {
-			int child = *it;
-			if (!visited[child]) {
-				q.push(child);
-				visited[child] = true;
-			}
-		}
-	}
 
-	/** Assertion */
-	ASSERT_THAT(actual, ElementsAreArray(GraphTest::EXPECTED_BFS));
-	cout << endl;
+  /** Assertion */
+  ASSERT_THAT(actual, ElementsAreArray(GraphTest::EXPECTED_BFS));
+  cout << endl;
 }
 
 TEST_F(GraphTest, dfs) {
-	/**
-	 *  Init: Push root
-	 *
-	 *  While stack is not empty
- 	 *  If not visited
- 	 *  Visit
- 	 *  Enqueue
-	 */
+  /**
+   *  Init: Push root
+   *
+   *  while (stack is not empty)
+   *  get parent node from stack(top node)
+   *  visit, and push child that has not visited
+   *
+   */
 
-	/** Arrange */
-	vector<int> actual;
-	const int N = 9;
-	cout << endl;
-	bool visited[N] = {false};
-	vector<int> v[N];
-	GraphTest::addEdge(v, 0, 1), GraphTest::addEdge(v, 0, 2);
-	GraphTest::addEdge(v, 1, 5), GraphTest::addEdge(v, 1, 6), GraphTest::addEdge(v, 2, 3);
-	GraphTest::addEdge(v, 3, 4), GraphTest::addEdge(v, 3, 7);
-	GraphTest::addEdge(v, 7, 8);
+  /** Arrange */
+  vector<int> actual;
+  const int N = 9;
+  cout << endl;
+  bool visited[N] = {false};
+  vector<int> v[N];
+  GraphTest::addEdge(v, 0, 1), GraphTest::addEdge(v, 0, 2);
+  GraphTest::addEdge(v, 1, 5), GraphTest::addEdge(v, 1, 6), GraphTest::addEdge(v, 2, 3);
+  GraphTest::addEdge(v, 3, 4), GraphTest::addEdge(v, 3, 7);
+  GraphTest::addEdge(v, 7, 8);
 
-	/** Action */
-	// TODO: DFS
-	stack<int> st;
-	st.push(0);
-	visited[0] = true;
-	cout << 0 << ", ";
-	actual.push_back(0);
+  /** Action */
+  // TODO: DFS
+  stack<int> s;
+  visited[0] = true;
+  s.push(0);
+  actual.push_back(0);
 
-	while (!st.empty()) {
-		int val = st.top();
-		st.pop();
-		for (vector<int>::iterator it = v[val].begin(); it < v[val].end(); it++) {
-			if (!visited[*it]) {
-				st.push(*it);
-				visited[*it] = true;
-				cout << *it << ", ";
-				actual.push_back(*it);
-			}
-		}
-	}
+  while (!s.empty()) {
+    int parent = s.top();
+    cout << parent << ", ";
+    s.pop();
+    for (auto it = v[parent].begin(); it < v[parent].end(); it++) {
+      int child = *it;
+      if (!visited[child]) {
+        visited[child] = true;
+        s.push(child);
+        actual.push_back(child);
+      }
+    }
+  }
 
-	/** Assertion */
-	ASSERT_THAT(actual, ElementsAreArray(GraphTest::EXPECTED_DFS));
-	cout << endl;
+  /** Assertion */
+  ASSERT_THAT(actual, ElementsAreArray(GraphTest::EXPECTED_DFS));
+  cout << endl;
 }
