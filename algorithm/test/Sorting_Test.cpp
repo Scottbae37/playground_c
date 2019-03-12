@@ -22,43 +22,43 @@ protected:
 };
 
 void insertionSolve(int *arr, int size) {
-	for (int i = 1; i < size; ++i) {
-		for (int j = i - 1; (j + 1) && (arr[j] > arr[j + 1]); --j) {
-			swap(arr[j], arr[j + 1]);
-		}
-	}
+  for (int i = 1; i < size; ++i) {
+    for (int j = i; j && arr[j - 1] > arr[j]; --j) {
+      swap(arr[j - 1], arr[j]);
+    }
+  }
 }
 
 void bubbleSolve(int *arr, int size) {
-	for (int i = 0; i < size - 1; ++i) {
-		for (int j = 0; j < size - 1 - i; ++j) {
-			if (arr[j] > arr[j + 1])
-				swap(arr[j], arr[j + 1]);
-		}
-	}
+  for (int i = 0; i < size - 1; ++i) {
+    for (int j = 0; j < size - 1 - i; ++j) {
+      if (arr[j] > arr[j + 1])
+        swap(arr[j], arr[j + 1]);
+    }
+  }
 }
 
 TEST_F(Sorting_Test, insertionSolve) {
-	insertionSolve(array, 17);
-	ASSERT_THAT(array, ElementsAreArray(sortedArr));
+  insertionSolve(array, 17);
+  ASSERT_THAT(array, ElementsAreArray(sortedArr));
 }
 
 TEST_F(Sorting_Test, solve2) {
-	bubbleSolve(array, 17);
-	ASSERT_THAT(array, ElementsAreArray(sortedArr));
+  bubbleSolve(array, 17);
+  ASSERT_THAT(array, ElementsAreArray(sortedArr));
 }
 
 
 TEST_F(Sorting_Test, InsertionSort_Test) {
-	InsertionSort a;
-	ISort *cut = &a;
-	cut->sort(array, 17);
-	ASSERT_THAT(array, ElementsAreArray(sortedArr));
+  InsertionSort a;
+  ISort *cut = &a;
+  cut->sort(array, 17);
+  ASSERT_THAT(array, ElementsAreArray(sortedArr));
 }
 
 TEST_F(Sorting_Test, BubbleSort_Test) {
-	ISort *cut = new BubbleSort();
-	cut->sort(array, 17);
-	EXPECT_THAT(array, ElementsAreArray(sortedArr));
-	delete cut;
+  ISort *cut = new BubbleSort();
+  cut->sort(array, 17);
+  EXPECT_THAT(array, ElementsAreArray(sortedArr));
+  delete cut;
 }
