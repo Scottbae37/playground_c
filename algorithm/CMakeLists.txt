@@ -1,5 +1,6 @@
 add_subdirectory(test)
 add_subdirectory(algospot)
+add_subdirectory(mooc_c)
 
 add_library(InsertionSort src/InsertionSort.cpp)
 target_include_directories(InsertionSort PUBLIC inc)
