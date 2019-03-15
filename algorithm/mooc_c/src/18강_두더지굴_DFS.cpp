@@ -26,12 +26,7 @@ int tunnelNumber;  /* 두더지굴 번호 */
 Function name 	: main() - 그래프를 구현하고 DFS 탐색을 실시한다.
 ------------------------------------------------------------------------------------*/
 
-//#include <unistd.h>
 int main() {
-//  char buf[1024];
-//  cout << endl;
-//  getcwd(buf, 1024);
-//  printf("%s\n", buf);
   const char *fileName[] = {"../../../algorithm/mooc_c/data/두더지굴1.txt",
                             "../../../algorithm/mooc_c/data/두더지굴2.txt",
                             "../../../algorithm/mooc_c/data/두더지굴3.txt"};
@@ -77,28 +72,28 @@ void initTunnelInfo() {
 }
 
 void solve() {
-  int i, j;
   cout << "========================" << endl;
   cout << "초기 두더지 굴 모양" << endl;
-  for (i = 1; i <= n; ++i) {
-    for (j = 1; j <= n; ++j) {
+  for (int i = 1; i <= n; ++i) {
+    for (int j = 1; j <= n; ++j) {
       printf("%3d", map[i][j]);
     }
     NL;
   }
   NL;
-  // TODO
-  tunnelNumber = 2;
   for (int i = 1; i <= n; ++i) {
     for (int j = 1; j <= n; ++j) {
       if (map[i][j] == 1) {
-        tunnelInfo[tunnelNumber].number = tunnelNumber;
-        dfs(i, j, tunnelNumber);
-        tunnelNumber++;
+        dfs(i, j, tunnelNumber++);
       }
     }
   }
 }
+`
+const int dir[4][2] = {{-1, 0},
+                       {0,  1},
+                       {1,  0},
+                       {0,  -1}};
 
 bool inRange(int row, int col) {
   if ((0 < row && row <= n) && (0 < col && col <= n))
@@ -112,22 +107,18 @@ void dfs(int row, int col, int tNum) {
   // Basis part
   if (!inRange(row, col))
     return;
+  if (map[row][col] != 1)
+    return;
 
-  tunnelInfo[tNum].size++;
   map[row][col] = tNum;
+  tunnelInfo[tNum].size++;
 
   // Inductive part
-  if (map[row + 1][col] == 1)
-    dfs(row + 1, col, tNum);
-
-  if (map[row - 1][col] == 1)
-    dfs(row - 1, col, tNum);
-
-  if (map[row][col + 1] == 1)
-    dfs(row, col + 1, tNum);
-
-  if (map[row][col - 1] == 1)
-    dfs(row, col - 1, tNum);
+  for (int i = 0; i < 4; i++) {
+    int nRow = row + dir[i][0];
+    int nCol = col + dir[i][1];
+    dfs(nRow, nCol, tNum);
+  }
 }
 
 void output() {
