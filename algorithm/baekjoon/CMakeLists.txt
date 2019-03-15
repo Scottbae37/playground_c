@@ -1,0 +1,1 @@
+add_executable(island brust_froce/Island_dfs.cpp)
