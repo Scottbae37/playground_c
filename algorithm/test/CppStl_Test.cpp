@@ -37,9 +37,9 @@ TEST_F(CppStl_Test, stl_swap) {
   arr.push_back(1);
   arr.push_back(2);
   arr.push_back(3);
-  vector<int> temp(arr.begin()+0, arr.begin()+2);
-  for(auto it = temp.begin(); it != temp.end(); it++)
-    cout<< "=== " << *it <<" ===" <<endl;
+  vector<int> temp(arr.begin() + 0, arr.begin() + 2);
+  for (auto it = temp.begin(); it != temp.end(); it++)
+    cout << "=== " << *it << " ===" << endl;
   /** Action */
   swap(arr[0], arr[1]);
 
@@ -81,6 +81,7 @@ TEST_F(CppStl_Test, stl_queue) {
   q.push(1);
   q.push(2);
   q.push(3);
+
   while (!q.empty()) {
     int val = q.front();
     q.pop();
@@ -121,21 +122,14 @@ bool pairComp(pair<string, int> a, pair<string, int> b) {
   return a.second < b.second;
 }
 
-struct st{
-    int X, ID;//위치, 아이디
-    st(){}
-    st(int a, int b): X(a), ID(b){}
-};
-
-typedef struct myStruct{
+typedef struct myStruct {
     int a;
     int b;
-    myStruct(int aa, int bb):a(aa), b(bb){}
-}MyType_t;
+
+    myStruct(int aa, int bb) : a(aa), b(bb) {}
+} MyType_t;
 
 TEST_F(CppStl_Test, pair_sort) {
-  vector<struct st> vv;
-  vv.push_back(st(1, 2));
   vector<MyType_t> v;
   v.push_back(MyType_t(10, 20));
   vector<pair<string, int>> vec;
@@ -146,6 +140,9 @@ TEST_F(CppStl_Test, pair_sort) {
   vec.push_back(pair<string, int>("B", 88));
   vec.push_back(pair<string, int>("A", 88));
   vec.push_back(pair<string, int>("A", 88));
+  vec.push_back(pair<string, int>("B", 87));
+  vec.push_back(pair<string, int>("BJs", 100));
+  vec.push_back(pair<string, int>("CCC", 239));
   vec.erase(unique(vec.begin(), vec.end()), vec.end());
   sort(vec.begin(), vec.end(), pairComp);
   for (vector<pair<string, int>>::iterator it = vec.begin(); it < vec.end(); it++) {
@@ -166,9 +163,11 @@ TEST_F(CppStl_Test, pair_sort) {
 TEST_F(CppStl_Test, map_test) {
   /** insert() */
   map<int, int> m;
+
   m.insert(make_pair(1, 2));
   m.insert(make_pair(1, 2));
   m.insert(make_pair(2, 2));
+  m.insert(pair<int,int>(3, 4));
   m[3] = 4; /** Possible */
   ASSERT_EQ(1, m.count(1));
   ASSERT_EQ(3, m.size());
