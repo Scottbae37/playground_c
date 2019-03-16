@@ -1,3 +1,4 @@
 add_executable(DP_ASYME_TILING dp/ASYMTILING.cpp)
 add_executable(JumpGame dp/JumpGame.cpp)
 add_executable(Picnic brust_force/Picnic.cpp)
+add_executable(BoardCover brust_force/BoardCover.cpp)
