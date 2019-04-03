@@ -51,7 +51,7 @@ int main() {
       aliveCnt--;
 
       int cnt = 0;
-      for (int i = k + 1;;) {
+      for (int i = k;;) {
         if (arr[i]) {
           cnt++;
         }
