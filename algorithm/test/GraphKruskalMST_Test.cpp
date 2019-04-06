@@ -1,8 +1,10 @@
 #include <gmock/gmock.h>
+#include <gtest/gtest.h>
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #include <utility>
+#include <queue>
 
 using namespace std;
 
@@ -94,17 +96,17 @@ TEST(KruskalAlgorithm, Mst_using_Kruskal) {
   vector<Edge> v;
   makeEdges(v);
   /**
-   *        (7)
-   *    13 /   \ 12
-   *   (4) -28 (1)
-   *    |      /
-   *    |     67
-   *    |   /
-   * 24| /
-   *  (2)--62---(5)
-   *         45/  \20
-   *         /     \
-   *      (6)-37---(3)
+   *        (7)                    (7)
+   *    13 /   \ 12            13 /   \ 12
+   *   (4) -28 (1)            (4)     (1)
+   *    |      / \             |        \
+   *    |     67 |             |        |
+   * 24 |   /    17   ==>   24 |       17
+   *   | /       |            |         |
+   *  (2)--62---(5)          (2)       (5)
+   *         45/  \20                    \20
+   *         /     \                      \
+   *      (6)-37---(3)           (6)-37---(3)
    *
    *
    */
@@ -124,4 +126,83 @@ TEST(KruskalAlgorithm, Mst_using_Kruskal) {
     }
   }
   EXPECT_EQ(123, totalCost);
+}
+
+bool visit[8];
+int ans = 0;
+
+void dfs(int m[][8], int s, int e, int dist) {
+  // Basis part
+  if (visit[s])
+    return;
+  visit[s] = true;
+
+  if (m[s][e])
+    ans = m[s][e] + dist;
+
+  // 연결된 놈 들은 다 찾아 들어가기
+  for (int i = 1; i < 8; i++)
+    if (m[s][i])
+      dfs(m, i, e, m[s][i]);
+}
+
+TEST(KruskalAlgorithm, each_dist) {
+  vector<Edge> v;
+  makeEdges(v);
+  sort(v.begin(), v.end());
+  const int nodeCnt = 7;
+  int matrix[nodeCnt + 1][nodeCnt + 1] = {0,};
+  int maxEdges = nodeCnt - 1;
+  int parent[8] = {0, 1, 2, 3, 4, 5, 6, 7};
+  for (auto it = v.begin(); maxEdges; ++it) {
+    int a = it->node[0];
+    int b = it->node[1];
+    if (!isConnected(parent, a, b)) {
+      unionParent(parent, a, b);
+      maxEdges--;
+      matrix[a][b] = matrix[b][a] = it->dist;
+    }
+  }
+
+  /**
+ *        (7)                    (7)
+ *    13 /   \ 12            13 /   \ 12
+ *   (4) -28 (1)            (4)     (1)
+ *    |      / \             |        \
+ *    |     67 |             |        |
+ * 24 |   /    17   ==>   24 |       17
+ *   | /       |            |         |
+ *  (2)--62---(5)          (2)       (5)
+ *         45/  \20                    \20
+ *         /     \                      \
+ *      (6)-37---(3)           (6)-37---(3)
+ *
+ *
+ */
+  queue<int> q;
+  q.push(7);
+  visit[7] = true;
+  int target = 6;
+  while (!q.empty()) {
+    int val = q.front();
+    q.pop();
+    if (val == target) {
+      cout << "Found " << endl;
+      break;
+    } else {
+      cout << "Not Found " << val << endl;
+    }
+    for (int i = 0; i <= nodeCnt; i++) {
+      if (matrix[val][i] && !visit[i]) {
+        cout << matrix[val][i] << endl;
+        // start 에서 다음 까지는, start에서 val까지와 val에서 i까지의 합이 start
+        matrix[7][i] = matrix[7][val] + matrix[val][i];
+        q.push(i);
+        visit[i] = true;
+      }
+    }
+  }
+  cout << matrix[7][target] << endl;
+  ans = matrix[7][target];
+  ASSERT_EQ(12 + 17 + 20 + 37, ans);
 }
