@@ -27,9 +27,9 @@ Function name 	: main() - 그래프를 구현하고 DFS 탐색을 실시한다.
 ------------------------------------------------------------------------------------*/
 
 int main() {
-  const char *fileName[] = {"../../../algorithm/mooc_c/data/두더지굴1.txt",
-                            "../../../algorithm/mooc_c/data/두더지굴2.txt",
-                            "../../../algorithm/mooc_c/data/두더지굴3.txt"};
+  const char *fileName[] = {"../../algorithm/mooc_c/data/두더지굴1.txt",
+                            "../../algorithm/mooc_c/data/두더지굴2.txt",
+                            "../../algorithm/mooc_c/data/두더지굴3.txt"};
   size_t i;
   for (i = 0; i < sizeof(fileName) / sizeof(fileName[0]); ++i) {
     tunnelNumber = 2; /* 두더지굴 번호(1은 터널이 있음을 의미하므로 2번 부터 사용) */
