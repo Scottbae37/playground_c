@@ -20,9 +20,6 @@
 3 5
 11 26
 
-
-  2   5
- x     x
  */
 
 #include <iostream>
@@ -35,39 +32,56 @@ int n, offset;
 
 int arr[1001];
 
+void solve();
+
+void input();
+
+void showResult();
+
 int main() {
   int cases;
   cin >> cases;
   while (cases--) {
-    cin >> n >> offset;
-    memset(arr, 0, sizeof(arr));
-    for (int i = 1; i <= n; i++)
-      arr[i] = i;
-    int aliveCnt = n;
-    int k = 1;
-    n += 1;
-    while (aliveCnt != 2) {
-      arr[k] = 0;
-      aliveCnt--;
-
-      int cnt = 0;
-      for (int i = k;;) {
-        if (arr[i]) {
-          cnt++;
-        }
-        if (cnt == offset) {
-          k = i;
-          break;
-        }
-        i++;
-        i = i % n;
-      }
-    }
-    for (int i = 1; i < n; i++) {
-      if (arr[i]) {
-        cout << arr[i] << " ";
-      }
-    }
+    input();
+    solve();
+    showResult();
   }
   return 0;
+}
+
+void showResult() {
+  for (int i = 1; i < n + 1; i++)
+    if (arr[i])
+      cout << arr[i] << " ";
+}
+
+void input() {
+  cin >> n >> offset;
+  memset(arr, 0, sizeof(arr));
+  for (int i = 1; i <= n; i++)
+    arr[i] = i;
+}
+
+void solve() {
+  int aliveCnt = n;
+  int killPos = 1;
+  const int MOD = n + 1;
+
+  while (aliveCnt != 2) {
+    arr[killPos] = 0;
+    aliveCnt--;
+
+    int cnt = 0;
+    for (int i = killPos;;) {
+      if (arr[i]) {
+        cnt++;
+      }
+      if (cnt == offset) {
+        killPos = i;
+        break;
+      }
+      i++;
+      i = i % MOD;
+    }
+  }
 }
