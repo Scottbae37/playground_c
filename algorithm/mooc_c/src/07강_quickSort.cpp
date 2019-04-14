@@ -53,7 +53,7 @@ void quickSort(int *ary, int size) {
     return; // 구간값이 1이하이면 sort가 완료된 것 이므로 return
   pivot = ary[size - 1];
   // TODO
-  while (1) {
+  while (true) {
     while (ary[++i] < pivot);
     while (j && ary[--j] > pivot);
     if (i < j)
