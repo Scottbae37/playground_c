@@ -7,7 +7,8 @@ add_executable(run_all_tests
         Sorting_Test.cpp
         MergeSort_Test.cpp
         Graph_Test.cpp
-        GraphKruskalMST_Test.cpp)
+        GraphKruskalMST_Test.cpp
+        DijkstraShortestPath.cpp)
 
 target_link_libraries(run_all_tests
         PUBLIC GTest::GTest
